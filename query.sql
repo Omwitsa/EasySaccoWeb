@@ -1,0 +1,3 @@
+-> contrib (amount = Share capital)
+-> sharetype
+-> LOANTYPE

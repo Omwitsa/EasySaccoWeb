@@ -1,0 +1,710 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <LastUsedBuildConfiguration>Release</LastUsedBuildConfiguration>
+    <LastUsedPlatform>Any CPU</LastUsedPlatform>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="About.aspx">
+      <publishTime>10/22/2021 12:56:37</publishTime>
+    </File>
+    <File Include="Activities/Dividends.aspx">
+      <publishTime>05/01/2017 20:29:28</publishTime>
+    </File>
+    <File Include="Activities/EndYearProcessing.aspx">
+      <publishTime>05/01/2017 20:29:30</publishTime>
+    </File>
+    <File Include="BankReconciliation.aspx">
+      <publishTime>10/22/2021 12:56:37</publishTime>
+    </File>
+    <File Include="bin/AjaxControlToolkit.dll">
+      <publishTime>05/12/2010 11:24:02</publishTime>
+    </File>
+    <File Include="bin/Neodynamic.SDK.WebClientPrint.dll">
+      <publishTime>10/08/2013 09:54:30</publishTime>
+    </File>
+    <File Include="bin/USACBOSA.dll">
+      <publishTime>12/17/2021 15:36:21</publishTime>
+    </File>
+    <File Include="Changepwd/AddUser.aspx">
+      <publishTime>05/26/2017 09:56:46</publishTime>
+    </File>
+    <File Include="Changepwd/Bosa.aspx">
+      <publishTime>05/26/2017 09:56:46</publishTime>
+    </File>
+    <File Include="Changepwd/Passchange.aspx">
+      <publishTime>05/26/2017 10:08:14</publishTime>
+    </File>
+    <File Include="ClientAdmin/ClientAdmin.aspx">
+      <publishTime>11/11/2019 09:45:26</publishTime>
+    </File>
+    <File Include="ClientAdmin/ClientAdmin.Master">
+      <publishTime>12/14/2021 13:50:01</publishTime>
+    </File>
+    <File Include="ClientAdmin/GLInquiry.aspx">
+      <publishTime>12/15/2020 13:03:48</publishTime>
+    </File>
+    <File Include="ClientAdmin/LoanSchedule.aspx">
+      <publishTime>11/11/2019 10:06:03</publishTime>
+    </File>
+    <File Include="ClientAdmin/LoansInquiry.aspx">
+      <publishTime>09/13/2020 13:27:48</publishTime>
+    </File>
+    <File Include="ClientAdmin/Makerchecker.aspx">
+      <publishTime>11/11/2019 10:06:03</publishTime>
+    </File>
+    <File Include="ClientAdmin/membereport.aspx">
+      <publishTime>09/13/2020 13:27:48</publishTime>
+    </File>
+    <File Include="ClientAdmin/MembershipRegistration.aspx">
+      <publishTime>12/14/2021 14:56:12</publishTime>
+    </File>
+    <File Include="ClientAdmin/ReprintReceipt.aspx">
+      <publishTime>11/11/2019 10:06:03</publishTime>
+    </File>
+    <File Include="ClientAdmin/SharesInquiry.aspx">
+      <publishTime>05/13/2020 20:12:53</publishTime>
+    </File>
+    <File Include="ClientAdmin/ShareState.aspx">
+      <publishTime>11/11/2019 10:06:03</publishTime>
+    </File>
+    <File Include="ClientAdmin/SharetoLoanOffset.aspx">
+      <publishTime>11/11/2019 10:06:03</publishTime>
+    </File>
+    <File Include="ClientAdmin/sharetransfers.aspx">
+      <publishTime>11/11/2019 10:06:03</publishTime>
+    </File>
+    <File Include="ClientAdmin/SupplierList.aspx">
+      <publishTime>11/11/2019 10:06:02</publishTime>
+    </File>
+    <File Include="ClientAdmin/suppliers.aspx">
+      <publishTime>11/11/2019 10:06:02</publishTime>
+    </File>
+    <File Include="ClientAdmin/Transactions.aspx">
+      <publishTime>11/11/2019 10:06:02</publishTime>
+    </File>
+    <File Include="ClientAdmin/TrialBalance.aspx">
+      <publishTime>11/11/2019 10:06:02</publishTime>
+    </File>
+    <File Include="ClientAdmin/Variation.aspx">
+      <publishTime>11/11/2019 10:06:02</publishTime>
+    </File>
+    <File Include="CreditAdmin/AccountSetup.aspx">
+      <publishTime>11/29/2021 12:29:51</publishTime>
+    </File>
+    <File Include="CreditAdmin/Agents.aspx">
+      <publishTime>12/14/2017 13:38:54</publishTime>
+    </File>
+    <File Include="CreditAdmin/Beneficiary.aspx">
+      <publishTime>12/01/2021 16:23:01</publishTime>
+    </File>
+    <File Include="CreditAdmin/CompanySetup.aspx">
+      <publishTime>12/15/2021 10:52:09</publishTime>
+    </File>
+    <File Include="CreditAdmin/CreditAdmin.aspx">
+      <publishTime>12/14/2017 13:44:50</publishTime>
+    </File>
+    <File Include="CreditAdmin/CreditAdmin.Master">
+      <publishTime>12/16/2021 12:18:40</publishTime>
+    </File>
+    <File Include="CreditAdmin/ExpenseEntry.aspx">
+      <publishTime>12/14/2017 13:38:53</publishTime>
+    </File>
+    <File Include="CreditAdmin/GLInquiry.aspx">
+      <publishTime>08/10/2018 08:34:16</publishTime>
+    </File>
+    <File Include="CreditAdmin/GroupMembers.aspx">
+      <publishTime>12/14/2017 13:38:53</publishTime>
+    </File>
+    <File Include="CreditAdmin/Journal Posting.aspx">
+      <publishTime>12/01/2021 10:15:00</publishTime>
+    </File>
+    <File Include="CreditAdmin/LoanAppraisals.aspx">
+      <publishTime>08/27/2020 11:44:34</publishTime>
+    </File>
+    <File Include="CreditAdmin/LoansInquiry.aspx">
+      <publishTime>09/13/2020 13:27:49</publishTime>
+    </File>
+    <File Include="CreditAdmin/membereport.aspx">
+      <publishTime>09/13/2020 13:27:49</publishTime>
+    </File>
+    <File Include="CreditAdmin/MembershipRegistration.aspx">
+      <publishTime>12/14/2021 14:55:42</publishTime>
+    </File>
+    <File Include="CreditAdmin/perloan.aspx">
+      <publishTime>12/14/2017 13:38:52</publishTime>
+    </File>
+    <File Include="CreditAdmin/perproduct.aspx">
+      <publishTime>12/14/2017 13:38:52</publishTime>
+    </File>
+    <File Include="CreditAdmin/printreceipt.aspx">
+      <publishTime>12/14/2017 13:38:52</publishTime>
+    </File>
+    <File Include="CreditAdmin/ReprintReceipt.aspx">
+      <publishTime>01/24/2019 12:54:28</publishTime>
+    </File>
+    <File Include="CreditAdmin/SharesInquiry.aspx">
+      <publishTime>05/13/2020 20:12:48</publishTime>
+    </File>
+    <File Include="CreditAdmin/ShareState.aspx">
+      <publishTime>12/14/2017 15:04:28</publishTime>
+    </File>
+    <File Include="CreditAdmin/UnpaidLoans.aspx">
+      <publishTime>12/14/2017 13:38:52</publishTime>
+    </File>
+    <File Include="CreditAdmin/Variation.aspx">
+      <publishTime>12/14/2017 13:38:52</publishTime>
+    </File>
+    <File Include="CreditAdmin/WithdrawalNotice.aspx">
+      <publishTime>09/06/2018 13:23:38</publishTime>
+    </File>
+    <File Include="CustomServAdmin/Beneficiary.aspx">
+      <publishTime>05/03/2017 15:26:14</publishTime>
+    </File>
+    <File Include="CustomServAdmin/CompanySetup.aspx">
+      <publishTime>12/15/2021 10:52:09</publishTime>
+    </File>
+    <File Include="CustomServAdmin/CustomServAdmin.aspx">
+      <publishTime>05/01/2017 20:29:44</publishTime>
+    </File>
+    <File Include="CustomServAdmin/CustomServAdmin.Master">
+      <publishTime>12/14/2021 13:50:00</publishTime>
+    </File>
+    <File Include="CustomServAdmin/GroupMembers.aspx">
+      <publishTime>05/08/2017 13:54:04</publishTime>
+    </File>
+    <File Include="CustomServAdmin/LoansInquiry.aspx">
+      <publishTime>09/13/2020 13:27:49</publishTime>
+    </File>
+    <File Include="CustomServAdmin/MembershipRegistration.aspx">
+      <publishTime>12/14/2021 14:54:41</publishTime>
+    </File>
+    <File Include="CustomServAdmin/MPA3.aspx">
+      <publishTime>06/04/2018 12:07:47</publishTime>
+    </File>
+    <File Include="CustomServAdmin/MPA_Paymentposting.aspx">
+      <publishTime>09/06/2018 13:12:36</publishTime>
+    </File>
+    <File Include="CustomServAdmin/printreceipt.aspx">
+      <publishTime>09/19/2017 11:23:22</publishTime>
+    </File>
+    <File Include="CustomServAdmin/ReprintReceipt.aspx">
+      <publishTime>01/24/2019 12:55:17</publishTime>
+    </File>
+    <File Include="CustomServAdmin/SharesInquiry.aspx">
+      <publishTime>05/13/2020 20:12:48</publishTime>
+    </File>
+    <File Include="CustomServAdmin/SharetoLoanOffset.aspx">
+      <publishTime>09/13/2018 14:34:54</publishTime>
+    </File>
+    <File Include="CustomServAdmin/sharetransfers.aspx">
+      <publishTime>02/07/2018 09:50:00</publishTime>
+    </File>
+    <File Include="CustomServAdmin/Variation.aspx">
+      <publishTime>05/01/2017 20:29:46</publishTime>
+    </File>
+    <File Include="Default.aspx">
+      <publishTime>12/14/2021 13:41:31</publishTime>
+    </File>
+    <File Include="DividendProcessing.aspx">
+      <publishTime>10/22/2021 12:56:37</publishTime>
+    </File>
+    <File Include="FinanceAdmin/AccountSetup.aspx">
+      <publishTime>10/22/2021 12:38:09</publishTime>
+    </File>
+    <File Include="FinanceAdmin/Agents.aspx">
+      <publishTime>10/22/2021 12:38:02</publishTime>
+    </File>
+    <File Include="FinanceAdmin/Beneficiary.aspx">
+      <publishTime>10/22/2021 12:37:54</publishTime>
+    </File>
+    <File Include="FinanceAdmin/BranchesList.aspx">
+      <publishTime>10/22/2021 12:37:46</publishTime>
+    </File>
+    <File Include="FinanceAdmin/Budgeting.aspx">
+      <publishTime>10/22/2021 12:37:37</publishTime>
+    </File>
+    <File Include="FinanceAdmin/CompanySetup.aspx">
+      <publishTime>12/15/2021 10:52:09</publishTime>
+    </File>
+    <File Include="FinanceAdmin/FinanceAdmin.aspx">
+      <publishTime>10/22/2021 12:37:21</publishTime>
+    </File>
+    <File Include="FinanceAdmin/FinanceAdmin.Master">
+      <publishTime>12/17/2021 07:41:59</publishTime>
+    </File>
+    <File Include="FinanceAdmin/GLInquiry.aspx">
+      <publishTime>10/22/2021 12:36:54</publishTime>
+    </File>
+    <File Include="FinanceAdmin/GroupMembers.aspx">
+      <publishTime>10/22/2021 12:36:39</publishTime>
+    </File>
+    <File Include="FinanceAdmin/InvoicePayments.aspx">
+      <publishTime>10/22/2021 12:36:29</publishTime>
+    </File>
+    <File Include="FinanceAdmin/Journal Posting.aspx">
+      <publishTime>10/22/2021 12:36:20</publishTime>
+    </File>
+    <File Include="FinanceAdmin/LoanAppraisals.aspx">
+      <publishTime>10/22/2021 12:36:12</publishTime>
+    </File>
+    <File Include="FinanceAdmin/LoanEndorsements.aspx">
+      <publishTime>10/22/2021 12:36:01</publishTime>
+    </File>
+    <File Include="FinanceAdmin/LoanSchedule.aspx">
+      <publishTime>10/22/2021 12:35:52</publishTime>
+    </File>
+    <File Include="FinanceAdmin/LoansInquiry.aspx">
+      <publishTime>10/22/2021 12:35:42</publishTime>
+    </File>
+    <File Include="FinanceAdmin/Makerchecker.aspx">
+      <publishTime>01/23/2018 11:30:15</publishTime>
+    </File>
+    <File Include="FinanceAdmin/membereport.aspx">
+      <publishTime>10/22/2021 12:35:25</publishTime>
+    </File>
+    <File Include="FinanceAdmin/MembershipRegistration.aspx">
+      <publishTime>12/14/2021 14:54:25</publishTime>
+    </File>
+    <File Include="FinanceAdmin/MPA2.aspx">
+      <publishTime>11/29/2021 07:55:36</publishTime>
+    </File>
+    <File Include="FinanceAdmin/MPA_Paymentposting.aspx">
+      <publishTime>10/22/2021 12:35:27</publishTime>
+    </File>
+    <File Include="FinanceAdmin/Nominal.aspx">
+      <publishTime>10/22/2021 12:38:20</publishTime>
+    </File>
+    <File Include="FinanceAdmin/Nominal_Paymentposting.aspx">
+      <publishTime>10/22/2021 12:38:30</publishTime>
+    </File>
+    <File Include="FinanceAdmin/PaymentOptions.aspx">
+      <publishTime>10/22/2021 12:38:37</publishTime>
+    </File>
+    <File Include="FinanceAdmin/perloan.aspx">
+      <publishTime>10/22/2021 12:38:48</publishTime>
+    </File>
+    <File Include="FinanceAdmin/perproduct.aspx">
+      <publishTime>10/22/2021 12:38:56</publishTime>
+    </File>
+    <File Include="FinanceAdmin/printreceipt.aspx">
+      <publishTime>10/22/2021 12:39:08</publishTime>
+    </File>
+    <File Include="FinanceAdmin/ProcessDividend.aspx">
+      <publishTime>10/22/2021 12:39:16</publishTime>
+    </File>
+    <File Include="FinanceAdmin/Receive_Invoices.aspx">
+      <publishTime>10/22/2021 12:39:25</publishTime>
+    </File>
+    <File Include="FinanceAdmin/ReprintReceipt.aspx">
+      <publishTime>10/22/2021 12:39:32</publishTime>
+    </File>
+    <File Include="FinanceAdmin/SharesInquiry.aspx">
+      <publishTime>10/22/2021 12:39:40</publishTime>
+    </File>
+    <File Include="FinanceAdmin/ShareState.aspx">
+      <publishTime>10/22/2021 12:39:47</publishTime>
+    </File>
+    <File Include="FinanceAdmin/SharetoLoanOffset.aspx">
+      <publishTime>10/22/2021 12:39:56</publishTime>
+    </File>
+    <File Include="FinanceAdmin/sharetransfers.aspx">
+      <publishTime>10/22/2021 12:40:09</publishTime>
+    </File>
+    <File Include="FinanceAdmin/SupplierList.aspx">
+      <publishTime>10/22/2021 12:40:16</publishTime>
+    </File>
+    <File Include="FinanceAdmin/suppliers.aspx">
+      <publishTime>10/22/2021 12:40:55</publishTime>
+    </File>
+    <File Include="FinanceAdmin/Transactions.aspx">
+      <publishTime>10/22/2021 12:41:02</publishTime>
+    </File>
+    <File Include="FinanceAdmin/TrialBalance.aspx">
+      <publishTime>10/22/2021 12:41:09</publishTime>
+    </File>
+    <File Include="FinanceAdmin/UnpaidLoans.aspx">
+      <publishTime>10/22/2021 12:41:19</publishTime>
+    </File>
+    <File Include="FinanceAdmin/Variation.aspx">
+      <publishTime>10/22/2021 12:41:26</publishTime>
+    </File>
+    <File Include="FinanceAdmin/WithdrawalNotice.aspx">
+      <publishTime>10/22/2021 12:41:32</publishTime>
+    </File>
+    <File Include="General Ledgers1/AccountSetup.aspx">
+      <publishTime>10/22/2021 12:41:45</publishTime>
+    </File>
+    <File Include="General Ledgers1/Budgeting.aspx">
+      <publishTime>10/22/2021 12:41:52</publishTime>
+    </File>
+    <File Include="General Ledgers1/GLInquiry.aspx">
+      <publishTime>10/22/2021 12:42:18</publishTime>
+    </File>
+    <File Include="General Ledgers1/Journal Posting.aspx">
+      <publishTime>10/22/2021 12:42:28</publishTime>
+    </File>
+    <File Include="General Ledgers1/JournalBatchPosting.aspx">
+      <publishTime>10/22/2021 12:42:35</publishTime>
+    </File>
+    <File Include="General Ledgers1/TRBalance.aspx">
+      <publishTime>10/22/2021 12:42:44</publishTime>
+    </File>
+    <File Include="General Ledgers1/trbnce.aspx">
+      <publishTime>10/22/2021 12:42:51</publishTime>
+    </File>
+    <File Include="General Ledgers1/TrialBalance.aspx">
+      <publishTime>10/22/2021 12:42:58</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>05/01/2017 20:29:58</publishTime>
+    </File>
+    <File Include="HR_Admin/Agents.aspx">
+      <publishTime>10/22/2021 12:43:07</publishTime>
+    </File>
+    <File Include="HR_Admin/Beneficiary.aspx">
+      <publishTime>10/22/2021 12:43:14</publishTime>
+    </File>
+    <File Include="HR_Admin/CompanySetup.aspx">
+      <publishTime>12/15/2021 10:52:09</publishTime>
+    </File>
+    <File Include="HR_Admin/GroupMembers.aspx">
+      <publishTime>10/22/2021 12:43:27</publishTime>
+    </File>
+    <File Include="HR_Admin/HR_Admin.aspx">
+      <publishTime>10/22/2021 12:43:35</publishTime>
+    </File>
+    <File Include="HR_Admin/HR_Admin.Master">
+      <publishTime>12/14/2021 13:50:00</publishTime>
+    </File>
+    <File Include="HR_Admin/MembershipRegistration.aspx">
+      <publishTime>12/14/2021 14:54:11</publishTime>
+    </File>
+    <File Include="HR_Admin/MPA4.aspx">
+      <publishTime>10/22/2021 12:44:02</publishTime>
+    </File>
+    <File Include="HR_Admin/printreceipt.aspx">
+      <publishTime>10/22/2021 12:44:18</publishTime>
+    </File>
+    <File Include="HR_Admin/SharesInquiry.aspx">
+      <publishTime>10/22/2021 12:44:25</publishTime>
+    </File>
+    <File Include="HR_Admin/Variation.aspx">
+      <publishTime>10/22/2021 12:44:35</publishTime>
+    </File>
+    <File Include="Images/calendar.png">
+      <publishTime>03/05/2015 11:44:12</publishTime>
+    </File>
+    <File Include="Images/calendar1.png">
+      <publishTime>06/20/2016 11:41:28</publishTime>
+    </File>
+    <File Include="Images/copyright.PNG">
+      <publishTime>06/12/2015 11:15:30</publishTime>
+    </File>
+    <File Include="Images/fep-sacco.jpg">
+      <publishTime>05/26/2017 10:07:45</publishTime>
+    </File>
+    <File Include="Images/FepPIC.JPG">
+      <publishTime>05/26/2017 10:07:45</publishTime>
+    </File>
+    <File Include="Images/index.jpg">
+      <publishTime>12/14/2021 13:32:03</publishTime>
+    </File>
+    <File Include="Images/LOGO.JPG">
+      <publishTime>08/19/2020 11:16:09</publishTime>
+    </File>
+    <File Include="Images/photo.jpg">
+      <publishTime>03/05/2015 11:44:12</publishTime>
+    </File>
+    <File Include="Images/photo_verybig_195019.jpg">
+      <publishTime>12/14/2021 13:48:25</publishTime>
+    </File>
+    <File Include="Images/searchbutton.PNG">
+      <publishTime>05/25/2013 06:42:00</publishTime>
+    </File>
+    <File Include="Images/searchbuttonIV.PNG">
+      <publishTime>06/03/2013 03:10:44</publishTime>
+    </File>
+    <File Include="Images/The_World_Bank_logo.svg.png">
+      <publishTime>12/14/2021 13:32:03</publishTime>
+    </File>
+    <File Include="LoansAdmin/Agents.aspx">
+      <publishTime>10/22/2021 12:44:46</publishTime>
+    </File>
+    <File Include="LoansAdmin/Beneficiary.aspx">
+      <publishTime>10/22/2021 12:44:51</publishTime>
+    </File>
+    <File Include="LoansAdmin/CompanySetup.aspx">
+      <publishTime>12/15/2021 10:52:09</publishTime>
+    </File>
+    <File Include="LoansAdmin/GroupApplication.aspx">
+      <publishTime>12/15/2021 15:13:31</publishTime>
+    </File>
+    <File Include="LoansAdmin/GroupMembers.aspx">
+      <publishTime>10/22/2021 12:45:05</publishTime>
+    </File>
+    <File Include="LoansAdmin/LoanApplications.aspx">
+      <publishTime>10/22/2021 12:45:11</publishTime>
+    </File>
+    <File Include="LoansAdmin/LoanGuarantors.aspx">
+      <publishTime>10/22/2021 12:45:18</publishTime>
+    </File>
+    <File Include="LoansAdmin/LoansAdmin.aspx">
+      <publishTime>10/22/2021 12:45:26</publishTime>
+    </File>
+    <File Include="LoansAdmin/LoansAdmin.Master">
+      <publishTime>12/16/2021 12:08:48</publishTime>
+    </File>
+    <File Include="LoansAdmin/LoanSchedule.aspx">
+      <publishTime>10/22/2021 12:45:39</publishTime>
+    </File>
+    <File Include="LoansAdmin/LoansInquiry.aspx">
+      <publishTime>10/22/2021 12:45:46</publishTime>
+    </File>
+    <File Include="LoansAdmin/MembershipRegistration.aspx">
+      <publishTime>12/14/2021 14:55:52</publishTime>
+    </File>
+    <File Include="LoansAdmin/MPA5.aspx">
+      <publishTime>10/22/2021 12:46:12</publishTime>
+    </File>
+    <File Include="LoansAdmin/MPA_Paymentposting.aspx">
+      <publishTime>10/22/2021 12:46:01</publishTime>
+    </File>
+    <File Include="LoansAdmin/printreceipt.aspx">
+      <publishTime>10/22/2021 12:46:20</publishTime>
+    </File>
+    <File Include="LoansAdmin/ReprintReceipt.aspx">
+      <publishTime>10/22/2021 12:46:29</publishTime>
+    </File>
+    <File Include="LoansAdmin/SharesInquiry.aspx">
+      <publishTime>10/22/2021 12:46:35</publishTime>
+    </File>
+    <File Include="LoansAdmin/SharetoLoanOffset.aspx">
+      <publishTime>10/22/2021 12:46:43</publishTime>
+    </File>
+    <File Include="LoansAdmin/Variation.aspx">
+      <publishTime>10/22/2021 12:46:51</publishTime>
+    </File>
+    <File Include="login.Master">
+      <publishTime>12/14/2021 13:50:00</publishTime>
+    </File>
+    <File Include="LoginMaster.Master">
+      <publishTime>10/22/2021 12:56:37</publishTime>
+    </File>
+    <File Include="Logout.aspx">
+      <publishTime>05/01/2017 20:30:06</publishTime>
+    </File>
+    <File Include="ManagementAdmin/Beneficiary.aspx">
+      <publishTime>10/22/2021 12:47:02</publishTime>
+    </File>
+    <File Include="ManagementAdmin/CompanySetup.aspx">
+      <publishTime>12/15/2021 10:52:09</publishTime>
+    </File>
+    <File Include="ManagementAdmin/GroupMembers.aspx">
+      <publishTime>10/22/2021 12:47:16</publishTime>
+    </File>
+    <File Include="ManagementAdmin/ManagementAdmin.aspx">
+      <publishTime>10/22/2021 12:47:22</publishTime>
+    </File>
+    <File Include="ManagementAdmin/ManagementAdmin.Master">
+      <publishTime>12/14/2021 13:50:00</publishTime>
+    </File>
+    <File Include="ManagementAdmin/MPA1.aspx">
+      <publishTime>10/22/2021 12:47:39</publishTime>
+    </File>
+    <File Include="ManagementAdmin/printreceipt.aspx">
+      <publishTime>10/22/2021 12:47:48</publishTime>
+    </File>
+    <File Include="ManagementAdmin/SharesInquiry.aspx">
+      <publishTime>10/22/2021 12:47:55</publishTime>
+    </File>
+    <File Include="ManagementAdmin/Variation.aspx">
+      <publishTime>10/22/2021 12:48:03</publishTime>
+    </File>
+    <File Include="memberjuniorphoto.aspx">
+      <publishTime>10/22/2021 12:56:37</publishTime>
+    </File>
+    <File Include="memberphoto.aspx">
+      <publishTime>10/22/2021 12:56:37</publishTime>
+    </File>
+    <File Include="printreceipt.aspx">
+      <publishTime>10/22/2021 13:40:56</publishTime>
+    </File>
+    <File Include="Regions/Addnewmember.aspx">
+      <publishTime>10/22/2021 12:48:17</publishTime>
+    </File>
+    <File Include="Regions/Branchmainpage.aspx">
+      <publishTime>10/22/2021 12:48:25</publishTime>
+    </File>
+    <File Include="Regions/Membersrpt.aspx">
+      <publishTime>10/22/2021 12:48:32</publishTime>
+    </File>
+    <File Include="Regions/RgnAgents.aspx">
+      <publishTime>10/22/2021 12:48:38</publishTime>
+    </File>
+    <File Include="Regions/RgnBenefeciaries.aspx">
+      <publishTime>10/22/2021 12:48:45</publishTime>
+    </File>
+    <File Include="Reports/AppliedLoans.aspx">
+      <publishTime>10/22/2021 12:49:24</publishTime>
+    </File>
+    <File Include="Reports/AppraisalRPT.aspx">
+      <publishTime>10/22/2021 12:49:24</publishTime>
+    </File>
+    <File Include="Reports/dividendreport.aspx">
+      <publishTime>10/22/2021 12:49:24</publishTime>
+    </File>
+    <File Include="Reports/GLinquiry.aspx">
+      <publishTime>10/22/2021 12:50:41</publishTime>
+    </File>
+    <File Include="Reports/LoanScheduleReport.aspx">
+      <publishTime>10/22/2021 12:50:40</publishTime>
+    </File>
+    <File Include="Reports/LoansStatement.aspx">
+      <publishTime>10/22/2021 12:50:41</publishTime>
+    </File>
+    <File Include="Reports/mstatement.aspx">
+      <publishTime>10/22/2021 12:50:52</publishTime>
+    </File>
+    <File Include="Reports/perloanreport.aspx">
+      <publishTime>10/22/2021 12:50:57</publishTime>
+    </File>
+    <File Include="Reports/perproductreport.aspx">
+      <publishTime>10/22/2021 12:51:03</publishTime>
+    </File>
+    <File Include="Reports/printstmt.aspx">
+      <publishTime>10/22/2021 12:51:11</publishTime>
+    </File>
+    <File Include="Reports/ReportsViewer.aspx">
+      <publishTime>10/22/2021 12:51:21</publishTime>
+    </File>
+    <File Include="Reports/ShareStatementReport.aspx">
+      <publishTime>10/22/2021 12:51:29</publishTime>
+    </File>
+    <File Include="Reports/Site.Master">
+      <publishTime>10/22/2021 12:51:40</publishTime>
+    </File>
+    <File Include="Reports/statements.aspx">
+      <publishTime>10/22/2021 12:51:48</publishTime>
+    </File>
+    <File Include="Reports/unpaidLoans.aspx">
+      <publishTime>10/22/2021 12:51:53</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.3.1.min.js">
+      <publishTime>05/01/2017 20:32:36</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.4.1-vsdoc.js">
+      <publishTime>05/01/2017 20:32:36</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.4.1.js">
+      <publishTime>05/01/2017 20:32:36</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.4.1.min.js">
+      <publishTime>05/01/2017 20:32:36</publishTime>
+    </File>
+    <File Include="Scripts/JQuery.min.js">
+      <publishTime>05/01/2017 20:32:36</publishTime>
+    </File>
+    <File Include="Site.Master">
+      <publishTime>10/22/2021 12:56:41</publishTime>
+    </File>
+    <File Include="Styles/passtrength.css">
+      <publishTime>05/22/2018 21:43:24</publishTime>
+    </File>
+    <File Include="Styles/Site.css">
+      <publishTime>05/22/2018 21:55:16</publishTime>
+    </File>
+    <File Include="SysAdmin/AccountCodes.aspx">
+      <publishTime>10/22/2021 12:56:41</publishTime>
+    </File>
+    <File Include="SysAdmin/AddUser.aspx">
+      <publishTime>11/28/2021 11:44:55</publishTime>
+    </File>
+    <File Include="SysAdmin/Agents.aspx">
+      <publishTime>10/22/2021 12:56:41</publishTime>
+    </File>
+    <File Include="SysAdmin/Bank Setup.aspx">
+      <publishTime>10/22/2021 12:56:41</publishTime>
+    </File>
+    <File Include="SysAdmin/Beneficiary.aspx">
+      <publishTime>10/22/2021 12:56:40</publishTime>
+    </File>
+    <File Include="SysAdmin/BranchCodes.aspx">
+      <publishTime>10/22/2021 12:56:40</publishTime>
+    </File>
+    <File Include="SysAdmin/Collaterals.aspx">
+      <publishTime>10/22/2021 12:56:40</publishTime>
+    </File>
+    <File Include="SysAdmin/CompanySetup.aspx">
+      <publishTime>12/15/2021 08:16:04</publishTime>
+    </File>
+    <File Include="SysAdmin/Defaults.aspx">
+      <publishTime>10/22/2021 12:56:40</publishTime>
+    </File>
+    <File Include="SysAdmin/GroupMembers.aspx">
+      <publishTime>10/22/2021 12:56:40</publishTime>
+    </File>
+    <File Include="SysAdmin/LoansInquiry.aspx">
+      <publishTime>10/22/2021 12:56:40</publishTime>
+    </File>
+    <File Include="SysAdmin/LoanType.aspx">
+      <publishTime>10/22/2021 12:56:39</publishTime>
+    </File>
+    <File Include="SysAdmin/Locations.aspx">
+      <publishTime>10/22/2021 12:56:39</publishTime>
+    </File>
+    <File Include="SysAdmin/MembershipRegistration.aspx">
+      <publishTime>12/14/2021 14:54:13</publishTime>
+    </File>
+    <File Include="SysAdmin/MPA.aspx">
+      <publishTime>10/22/2021 12:56:38</publishTime>
+    </File>
+    <File Include="SysAdmin/printreceipt.aspx">
+      <publishTime>10/22/2021 12:56:38</publishTime>
+    </File>
+    <File Include="SysAdmin/ReprintReceipt.aspx">
+      <publishTime>10/22/2021 12:53:52</publishTime>
+    </File>
+    <File Include="SysAdmin/SharesInquiry.aspx">
+      <publishTime>10/22/2021 12:56:37</publishTime>
+    </File>
+    <File Include="SysAdmin/ShareTypes.aspx">
+      <publishTime>10/22/2021 12:54:05</publishTime>
+    </File>
+    <File Include="SysAdmin/SocietyParameters.aspx">
+      <publishTime>10/22/2021 12:54:12</publishTime>
+    </File>
+    <File Include="SysAdmin/SubCounty.aspx">
+      <publishTime>12/15/2021 12:33:11</publishTime>
+    </File>
+    <File Include="SysAdmin/SysAdmin.Master">
+      <publishTime>12/16/2021 12:08:47</publishTime>
+    </File>
+    <File Include="SysAdmin/SystemAdmin.aspx">
+      <publishTime>10/22/2021 12:54:28</publishTime>
+    </File>
+    <File Include="SysAdmin/Trans_Reversals.aspx">
+      <publishTime>10/22/2021 12:54:36</publishTime>
+    </File>
+    <File Include="SysAdmin/USERGROUP.aspx">
+      <publishTime>12/03/2021 10:19:27</publishTime>
+    </File>
+    <File Include="SysAdmin/Variation.aspx">
+      <publishTime>10/22/2021 12:54:50</publishTime>
+    </File>
+    <File Include="SysAdmin/Village.aspx">
+      <publishTime>12/15/2021 12:33:11</publishTime>
+    </File>
+    <File Include="SysAdmin/Ward.aspx">
+      <publishTime>12/15/2021 12:33:11</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>12/17/2021 15:36:23</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

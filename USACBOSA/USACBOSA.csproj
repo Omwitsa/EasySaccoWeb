@@ -1,0 +1,2441 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{12A9E1EB-0461-4A93-B027-7668BA2944CE}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>USACBOSA</RootNamespace>
+    <AssemblyName>USACBOSA</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=4.1.7.1213, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Baron Capital Limited\USACBOSA\bin\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Design, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\SAP BusinessObjects\Crystal Reports for .NET Framework 4.0\Common\SAP BusinessObjects Enterprise XI 4.0\win32_x86\dotnet\CrystalDecisions.CrystalReports.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="crystaldecisions.crystalreports.engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\Bii\Downloads\Compressed\crystaldecisions.crystalreports.engine.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Data.AdoDotNetInterop, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\SAP BusinessObjects\Crystal Reports for .NET Framework 4.0\Common\SAP BusinessObjects Enterprise XI 4.0\win32_x86\dotnet\CrystalDecisions.Data.AdoDotNetInterop.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Enterprise.Viewing.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>C:\Program Files (x86)\SAP BusinessObjects\Crystal Reports for .NET Framework 4.0\Common\SAP BusinessObjects Enterprise XI 4.0\win32_x86\dotnet\CrystalDecisions.Enterprise.Viewing.ReportSource.dll</HintPath>
+    </Reference>
+    <Reference Include="crystaldecisions.reportsource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\Bii\Downloads\crystaldecisions.reportsource.dll</HintPath>
+    </Reference>
+    <Reference Include="crystaldecisions.shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\Bii\Downloads\crystaldecisions.shared.dll</HintPath>
+    </Reference>
+    <Reference Include="crystaldecisions.web, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\Bii\Downloads\crystaldecisions.web.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.PMCObjLib">
+      <HintPath>D:\main\ARIMI\EasyMa04072015\EasyMa\obj\Debug\Interop.PMCObjLib.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.ReportViewer.Common, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Neodynamic.SDK.WebClientPrint, Version=2.0.2000.0, Culture=neutral, PublicKeyToken=93565f9c313b0a45, processorArchitecture=MSIL">
+      <HintPath>..\..\eASTSACCO_WEB\bin\Neodynamic.SDK.WebClientPrint.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.DynamicData.Design" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="About.aspx" />
+    <Content Include="Activities\Dividends.aspx" />
+    <Content Include="Activities\EndYearProcessing.aspx" />
+    <Content Include="BankReconciliation.aspx" />
+    <Content Include="Changepwd\AddUser.aspx" />
+    <Content Include="Changepwd\Bosa.aspx" />
+    <Content Include="Changepwd\Passchange.aspx" />
+    <Content Include="ClientAdmin\ClientAdmin.aspx" />
+    <Content Include="ClientAdmin\GLInquiry.aspx" />
+    <Content Include="ClientAdmin\LoanSchedule.aspx" />
+    <Content Include="ClientAdmin\LoansInquiry.aspx" />
+    <Content Include="ClientAdmin\Makerchecker.aspx" />
+    <Content Include="ClientAdmin\membereport.aspx" />
+    <Content Include="ClientAdmin\MembershipRegistration.aspx" />
+    <Content Include="ClientAdmin\ReprintReceipt.aspx" />
+    <Content Include="ClientAdmin\SharesInquiry.aspx" />
+    <Content Include="ClientAdmin\ShareState.aspx" />
+    <Content Include="ClientAdmin\SharetoLoanOffset.aspx" />
+    <Content Include="ClientAdmin\sharetransfers.aspx" />
+    <Content Include="ClientAdmin\SupplierList.aspx" />
+    <Content Include="ClientAdmin\suppliers.aspx" />
+    <Content Include="ClientAdmin\Transactions.aspx" />
+    <Content Include="ClientAdmin\TrialBalance.aspx" />
+    <Content Include="ClientAdmin\Variation.aspx" />
+    <Content Include="CreditAdmin\AccountSetup.aspx" />
+    <Content Include="CreditAdmin\Agents.aspx" />
+    <Content Include="CreditAdmin\Beneficiary.aspx" />
+    <Content Include="CreditAdmin\CompanySetup.aspx" />
+    <Content Include="CreditAdmin\ExpenseEntry.aspx" />
+    <Content Include="CreditAdmin\CreditAdmin.aspx" />
+    <Content Include="CreditAdmin\GLInquiry.aspx" />
+    <Content Include="CreditAdmin\GroupMembers.aspx" />
+    <Content Include="CreditAdmin\Journal Posting.aspx" />
+    <Content Include="CreditAdmin\LoanAppraisals.aspx" />
+    <Content Include="CreditAdmin\LoansInquiry.aspx" />
+    <Content Include="CreditAdmin\membereport.aspx" />
+    <Content Include="CreditAdmin\MembershipRegistration.aspx" />
+    <Content Include="CreditAdmin\perloan.aspx" />
+    <Content Include="CreditAdmin\perproduct.aspx" />
+    <Content Include="CreditAdmin\printreceipt.aspx" />
+    <Content Include="CreditAdmin\ReprintReceipt.aspx" />
+    <Content Include="CreditAdmin\SharesInquiry.aspx" />
+    <Content Include="CreditAdmin\ShareState.aspx" />
+    <Content Include="CreditAdmin\UnpaidLoans.aspx" />
+    <Content Include="CreditAdmin\Variation.aspx" />
+    <Content Include="CreditAdmin\WithdrawalNotice.aspx" />
+    <Content Include="CustomServAdmin\Beneficiary.aspx" />
+    <Content Include="CustomServAdmin\CompanySetup.aspx" />
+    <Content Include="CustomServAdmin\CustomServAdmin.aspx" />
+    <Content Include="CustomServAdmin\GroupMembers.aspx" />
+    <Content Include="CustomServAdmin\LoansInquiry.aspx" />
+    <Content Include="CustomServAdmin\MembershipRegistration.aspx" />
+    <Content Include="CustomServAdmin\MPA3.aspx" />
+    <Content Include="CustomServAdmin\MPA_Paymentposting.aspx" />
+    <Content Include="CustomServAdmin\printreceipt.aspx" />
+    <Content Include="CustomServAdmin\ReprintReceipt.aspx" />
+    <Content Include="CustomServAdmin\SharesInquiry.aspx" />
+    <Content Include="CustomServAdmin\SharetoLoanOffset.aspx" />
+    <Content Include="CustomServAdmin\sharetransfers.aspx" />
+    <Content Include="CustomServAdmin\Variation.aspx" />
+    <Content Include="Default.aspx" />
+    <Content Include="DividendProcessing.aspx" />
+    <Content Include="FinanceAdmin\AccountSetup.aspx" />
+    <Content Include="FinanceAdmin\Agents.aspx" />
+    <Content Include="FinanceAdmin\Beneficiary.aspx" />
+    <Content Include="FinanceAdmin\BranchesList.aspx" />
+    <Content Include="FinanceAdmin\Budgeting.aspx" />
+    <Content Include="FinanceAdmin\CompanySetup.aspx" />
+    <Content Include="FinanceAdmin\InvoicePayments.aspx" />
+    <Content Include="FinanceAdmin\Makerchecker.aspx" />
+    <Content Include="FinanceAdmin\Receive_Invoices.aspx" />
+    <Content Include="FinanceAdmin\FinanceAdmin.aspx" />
+    <Content Include="FinanceAdmin\GLInquiry.aspx" />
+    <Content Include="FinanceAdmin\GroupMembers.aspx" />
+    <Content Include="FinanceAdmin\Journal Posting.aspx" />
+    <Content Include="FinanceAdmin\LoanAppraisals.aspx" />
+    <Content Include="FinanceAdmin\LoanEndorsements.aspx" />
+    <Content Include="FinanceAdmin\LoanSchedule.aspx" />
+    <Content Include="FinanceAdmin\LoansInquiry.aspx" />
+    <Content Include="FinanceAdmin\membereport.aspx" />
+    <Content Include="FinanceAdmin\MembershipRegistration.aspx" />
+    <Content Include="FinanceAdmin\MPA2.aspx" />
+    <Content Include="FinanceAdmin\MPA_Paymentposting.aspx" />
+    <Content Include="FinanceAdmin\Nominal.aspx" />
+    <Content Include="FinanceAdmin\Nominal_Paymentposting.aspx" />
+    <Content Include="FinanceAdmin\PaymentOptions.aspx" />
+    <Content Include="FinanceAdmin\perloan.aspx" />
+    <Content Include="FinanceAdmin\perproduct.aspx" />
+    <Content Include="FinanceAdmin\printreceipt.aspx" />
+    <Content Include="FinanceAdmin\ProcessDividend.aspx" />
+    <Content Include="FinanceAdmin\ReprintReceipt.aspx" />
+    <Content Include="FinanceAdmin\SharesInquiry.aspx" />
+    <Content Include="FinanceAdmin\ShareState.aspx" />
+    <Content Include="FinanceAdmin\SharetoLoanOffset.aspx" />
+    <Content Include="FinanceAdmin\sharetransfers.aspx" />
+    <Content Include="FinanceAdmin\SupplierList.aspx" />
+    <Content Include="FinanceAdmin\suppliers.aspx" />
+    <Content Include="FinanceAdmin\Transactions.aspx" />
+    <Content Include="FinanceAdmin\TrialBalance.aspx" />
+    <Content Include="FinanceAdmin\UnpaidLoans.aspx" />
+    <Content Include="FinanceAdmin\Variation.aspx" />
+    <Content Include="FinanceAdmin\WithdrawalNotice.aspx" />
+    <Content Include="General Ledgers1\AccountSetup.aspx" />
+    <Content Include="General Ledgers1\Budgeting.aspx" />
+    <Content Include="General Ledgers1\GLInquiry.aspx" />
+    <Content Include="General Ledgers1\Journal Posting.aspx" />
+    <Content Include="General Ledgers1\JournalBatchPosting.aspx" />
+    <Content Include="General Ledgers1\TRBalance.aspx" />
+    <Content Include="General Ledgers1\trbnce.aspx" />
+    <Content Include="General Ledgers1\TrialBalance.aspx" />
+    <Content Include="HR_Admin\Agents.aspx" />
+    <Content Include="HR_Admin\Beneficiary.aspx" />
+    <Content Include="HR_Admin\CompanySetup.aspx" />
+    <Content Include="HR_Admin\GroupMembers.aspx" />
+    <Content Include="HR_Admin\HR_Admin.aspx" />
+    <Content Include="HR_Admin\MembershipRegistration.aspx" />
+    <Content Include="HR_Admin\MPA4.aspx" />
+    <Content Include="HR_Admin\printreceipt.aspx" />
+    <Content Include="HR_Admin\SharesInquiry.aspx" />
+    <Content Include="HR_Admin\Variation.aspx" />
+    <Content Include="Images\calendar1.png" />
+    <Content Include="Images\fep-sacco.jpg" />
+    <Content Include="Images\FepPIC.JPG" />
+    <Content Include="Images\index.jpg" />
+    <Content Include="Images\LOGO.JPG" />
+    <Content Include="Images\photo_verybig_195019.jpg" />
+    <Content Include="Images\searchbuttonIV.PNG" />
+    <Content Include="Images\The_World_Bank_logo.svg.png" />
+    <Content Include="LoansAdmin\Agents.aspx" />
+    <Content Include="LoansAdmin\Beneficiary.aspx" />
+    <Content Include="LoansAdmin\CompanySetup.aspx" />
+    <Content Include="LoansAdmin\GroupApplication.aspx" />
+    <Content Include="LoansAdmin\GroupMembers.aspx" />
+    <Content Include="LoansAdmin\LoanApplications.aspx" />
+    <Content Include="LoansAdmin\LoanGuarantors.aspx" />
+    <Content Include="LoansAdmin\LoansAdmin.aspx" />
+    <Content Include="LoansAdmin\LoanSchedule.aspx" />
+    <Content Include="LoansAdmin\LoansInquiry.aspx" />
+    <Content Include="LoansAdmin\MembershipRegistration.aspx" />
+    <Content Include="LoansAdmin\MPA5.aspx" />
+    <Content Include="LoansAdmin\MPA_Paymentposting.aspx" />
+    <Content Include="LoansAdmin\printreceipt.aspx" />
+    <Content Include="LoansAdmin\ReprintReceipt.aspx" />
+    <Content Include="LoansAdmin\SharesInquiry.aspx" />
+    <Content Include="LoansAdmin\SharetoLoanOffset.aspx" />
+    <Content Include="LoansAdmin\Variation.aspx" />
+    <Content Include="ManagementAdmin\Beneficiary.aspx" />
+    <Content Include="ManagementAdmin\CompanySetup.aspx" />
+    <Content Include="ManagementAdmin\GroupMembers.aspx" />
+    <Content Include="ManagementAdmin\ManagementAdmin.aspx" />
+    <Content Include="ManagementAdmin\MPA1.aspx" />
+    <Content Include="ManagementAdmin\printreceipt.aspx" />
+    <Content Include="ManagementAdmin\SharesInquiry.aspx" />
+    <Content Include="ManagementAdmin\Variation.aspx" />
+    <Content Include="printreceipt.aspx" />
+    <Content Include="Regions\Addnewmember.aspx" />
+    <Content Include="Regions\Branchmainpage.aspx" />
+    <Content Include="Regions\Membersrpt.aspx" />
+    <Content Include="Regions\RgnAgents.aspx" />
+    <Content Include="Regions\RgnBenefeciaries.aspx" />
+    <Content Include="Reports\AppliedLoans.aspx" />
+    <Content Include="Reports\AppraisalRPT.aspx" />
+    <Content Include="Reports\dividendreport.aspx" />
+    <Content Include="Reports\GLinquiry.aspx" />
+    <Content Include="Reports\LoansStatement.aspx" />
+    <Content Include="Reports\mstatement.aspx" />
+    <Content Include="Reports\perloanreport.aspx" />
+    <Content Include="Reports\perproductreport.aspx" />
+    <Content Include="Reports\printstmt.aspx" />
+    <Content Include="Reports\ReportsViewer.aspx" />
+    <Content Include="Reports\ShareStatementReport.aspx" />
+    <Content Include="Reports\statements.aspx" />
+    <Content Include="Reports\unpaidLoans.aspx" />
+    <Content Include="Reports\LoanScheduleReport.aspx" />
+    <Content Include="Scripts\jquery-1.3.1.min.js" />
+    <Content Include="Scripts\JQuery.min.js" />
+    <Content Include="memberjuniorphoto.aspx" />
+    <Content Include="memberphoto.aspx" />
+    <Content Include="Images\calendar.png" />
+    <Content Include="Images\copyright.PNG" />
+    <Content Include="Images\photo.jpg" />
+    <Content Include="Images\searchbutton.PNG" />
+    <Content Include="Logout.aspx" />
+    <Content Include="Styles\passtrength.css" />
+    <Content Include="Styles\Site.css" />
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="SysAdmin\AccountCodes.aspx" />
+    <Content Include="SysAdmin\AddUser.aspx" />
+    <Content Include="SysAdmin\Agents.aspx" />
+    <Content Include="SysAdmin\Bank Setup.aspx" />
+    <Content Include="SysAdmin\Beneficiary.aspx" />
+    <Content Include="SysAdmin\BranchCodes.aspx" />
+    <Content Include="SysAdmin\Collaterals.aspx" />
+    <Content Include="SysAdmin\CompanySetup.aspx" />
+    <Content Include="SysAdmin\Defaults.aspx" />
+    <Content Include="SysAdmin\GroupMembers.aspx" />
+    <Content Include="SysAdmin\LoansInquiry.aspx" />
+    <Content Include="SysAdmin\LoanType.aspx" />
+    <Content Include="SysAdmin\Locations.aspx" />
+    <Content Include="SysAdmin\MembershipRegistration.aspx" />
+    <Content Include="SysAdmin\MPA.aspx" />
+    <Content Include="SysAdmin\printreceipt.aspx" />
+    <Content Include="SysAdmin\ReprintReceipt.aspx" />
+    <Content Include="SysAdmin\SharesInquiry.aspx" />
+    <Content Include="SysAdmin\ShareTypes.aspx" />
+    <Content Include="SysAdmin\SocietyParameters.aspx" />
+    <Content Include="SysAdmin\SubCounty.aspx" />
+    <Content Include="SysAdmin\SystemAdmin.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Activities\Dividends.aspx.cs">
+      <DependentUpon>Dividends.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Activities\Dividends.aspx.designer.cs">
+      <DependentUpon>Dividends.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Activities\EndYearProcessing.aspx.cs">
+      <DependentUpon>EndYearProcessing.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Activities\EndYearProcessing.aspx.designer.cs">
+      <DependentUpon>EndYearProcessing.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BankReconciliation.aspx.cs">
+      <DependentUpon>BankReconciliation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BankReconciliation.aspx.designer.cs">
+      <DependentUpon>BankReconciliation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Calculate_Loan_Repayment.cs" />
+    <Compile Include="Changepwd\AddUser.aspx.cs">
+      <DependentUpon>AddUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Changepwd\AddUser.aspx.designer.cs">
+      <DependentUpon>AddUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Changepwd\Bosa.aspx.cs">
+      <DependentUpon>Bosa.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Changepwd\Bosa.aspx.designer.cs">
+      <DependentUpon>Bosa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Changepwd\Passchange.aspx.cs">
+      <DependentUpon>Passchange.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Changepwd\Passchange.aspx.designer.cs">
+      <DependentUpon>Passchange.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ClientAdmin\ClientAdmin.aspx.cs">
+      <DependentUpon>ClientAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ClientAdmin\ClientAdmin.aspx.designer.cs">
+      <DependentUpon>ClientAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ClientAdmin\ClientAdmin.Master.cs">
+      <DependentUpon>ClientAdmin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ClientAdmin\ClientAdmin.Master.designer.cs">
+      <DependentUpon>ClientAdmin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="ClientAdmin\GLInquiry.aspx.cs">
+      <DependentUpon>GLInquiry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ClientAdmin\GLInquiry.aspx.designer.cs">
+      <DependentUpon>GLInquiry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ClientAdmin\LoanSchedule.aspx.cs">
+      <DependentUpon>LoanSchedule.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ClientAdmin\LoanSchedule.aspx.designer.cs">
+      <DependentUpon>LoanSchedule.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ClientAdmin\LoansInquiry.aspx.cs">
+      <DependentUpon>LoansInquiry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ClientAdmin\LoansInquiry.aspx.designer.cs">
+      <DependentUpon>LoansInquiry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ClientAdmin\Makerchecker.aspx.cs">
+      <DependentUpon>Makerchecker.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ClientAdmin\Makerchecker.aspx.designer.cs">
+      <DependentUpon>Makerchecker.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ClientAdmin\membereport.aspx.cs">
+      <DependentUpon>membereport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ClientAdmin\membereport.aspx.designer.cs">
+      <DependentUpon>membereport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ClientAdmin\MembershipRegistration.aspx.cs">
+      <DependentUpon>MembershipRegistration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ClientAdmin\MembershipRegistration.aspx.designer.cs">
+      <DependentUpon>MembershipRegistration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ClientAdmin\ReprintReceipt.aspx.cs">
+      <DependentUpon>ReprintReceipt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ClientAdmin\ReprintReceipt.aspx.designer.cs">
+      <DependentUpon>ReprintReceipt.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ClientAdmin\SharesInquiry.aspx.cs">
+      <DependentUpon>SharesInquiry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ClientAdmin\SharesInquiry.aspx.designer.cs">
+      <DependentUpon>SharesInquiry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ClientAdmin\ShareState.aspx.cs">
+      <DependentUpon>ShareState.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ClientAdmin\ShareState.aspx.designer.cs">
+      <DependentUpon>ShareState.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ClientAdmin\SharetoLoanOffset.aspx.cs">
+      <DependentUpon>SharetoLoanOffset.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ClientAdmin\SharetoLoanOffset.aspx.designer.cs">
+      <DependentUpon>SharetoLoanOffset.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ClientAdmin\sharetransfers.aspx.cs">
+      <DependentUpon>sharetransfers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ClientAdmin\sharetransfers.aspx.designer.cs">
+      <DependentUpon>sharetransfers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ClientAdmin\SupplierList.aspx.cs">
+      <DependentUpon>SupplierList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ClientAdmin\SupplierList.aspx.designer.cs">
+      <DependentUpon>SupplierList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ClientAdmin\suppliers.aspx.cs">
+      <DependentUpon>suppliers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ClientAdmin\suppliers.aspx.designer.cs">
+      <DependentUpon>suppliers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ClientAdmin\Transactions.aspx.cs">
+      <DependentUpon>Transactions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ClientAdmin\Transactions.aspx.designer.cs">
+      <DependentUpon>Transactions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ClientAdmin\TrialBalance.aspx.cs">
+      <DependentUpon>TrialBalance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ClientAdmin\TrialBalance.aspx.designer.cs">
+      <DependentUpon>TrialBalance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ClientAdmin\Variation.aspx.cs">
+      <DependentUpon>Variation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ClientAdmin\Variation.aspx.designer.cs">
+      <DependentUpon>Variation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CreditAdmin\AccountSetup.aspx.cs">
+      <DependentUpon>AccountSetup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CreditAdmin\AccountSetup.aspx.designer.cs">
+      <DependentUpon>AccountSetup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CreditAdmin\Agents.aspx.cs">
+      <DependentUpon>Agents.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CreditAdmin\Agents.aspx.designer.cs">
+      <DependentUpon>Agents.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CreditAdmin\Beneficiary.aspx.cs">
+      <DependentUpon>Beneficiary.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CreditAdmin\Beneficiary.aspx.designer.cs">
+      <DependentUpon>Beneficiary.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CreditAdmin\CompanySetup.aspx.cs">
+      <DependentUpon>CompanySetup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CreditAdmin\CompanySetup.aspx.designer.cs">
+      <DependentUpon>CompanySetup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CreditAdmin\ExpenseEntry.aspx.cs">
+      <DependentUpon>ExpenseEntry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CreditAdmin\ExpenseEntry.aspx.designer.cs">
+      <DependentUpon>ExpenseEntry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CreditAdmin\CreditAdmin.aspx.cs">
+      <DependentUpon>CreditAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CreditAdmin\CreditAdmin.aspx.designer.cs">
+      <DependentUpon>CreditAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CreditAdmin\CreditAdmin.Master.cs">
+      <DependentUpon>CreditAdmin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CreditAdmin\CreditAdmin.Master.designer.cs">
+      <DependentUpon>CreditAdmin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="CreditAdmin\GLInquiry.aspx.cs">
+      <DependentUpon>GLInquiry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CreditAdmin\GLInquiry.aspx.designer.cs">
+      <DependentUpon>GLInquiry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CreditAdmin\GroupMembers.aspx.cs">
+      <DependentUpon>GroupMembers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CreditAdmin\GroupMembers.aspx.designer.cs">
+      <DependentUpon>GroupMembers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CreditAdmin\Journal Posting.aspx.cs">
+      <DependentUpon>Journal Posting.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CreditAdmin\Journal Posting.aspx.designer.cs">
+      <DependentUpon>Journal Posting.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CreditAdmin\LoanAppraisals.aspx.cs">
+      <DependentUpon>LoanAppraisals.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CreditAdmin\LoanAppraisals.aspx.designer.cs">
+      <DependentUpon>LoanAppraisals.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CreditAdmin\LoansInquiry.aspx.cs">
+      <DependentUpon>LoansInquiry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CreditAdmin\LoansInquiry.aspx.designer.cs">
+      <DependentUpon>LoansInquiry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CreditAdmin\membereport.aspx.cs">
+      <DependentUpon>membereport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CreditAdmin\membereport.aspx.designer.cs">
+      <DependentUpon>membereport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CreditAdmin\MembershipRegistration.aspx.cs">
+      <DependentUpon>MembershipRegistration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CreditAdmin\MembershipRegistration.aspx.designer.cs">
+      <DependentUpon>MembershipRegistration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CreditAdmin\perloan.aspx.cs">
+      <DependentUpon>perloan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CreditAdmin\perloan.aspx.designer.cs">
+      <DependentUpon>perloan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CreditAdmin\perproduct.aspx.cs">
+      <DependentUpon>perproduct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CreditAdmin\perproduct.aspx.designer.cs">
+      <DependentUpon>perproduct.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CreditAdmin\printreceipt.aspx.cs">
+      <DependentUpon>printreceipt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CreditAdmin\printreceipt.aspx.designer.cs">
+      <DependentUpon>printreceipt.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CreditAdmin\ReprintReceipt.aspx.cs">
+      <DependentUpon>ReprintReceipt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CreditAdmin\ReprintReceipt.aspx.designer.cs">
+      <DependentUpon>ReprintReceipt.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CreditAdmin\SharesInquiry.aspx.cs">
+      <DependentUpon>SharesInquiry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CreditAdmin\SharesInquiry.aspx.designer.cs">
+      <DependentUpon>SharesInquiry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CreditAdmin\ShareState.aspx.cs">
+      <DependentUpon>ShareState.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CreditAdmin\ShareState.aspx.designer.cs">
+      <DependentUpon>ShareState.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CreditAdmin\UnpaidLoans.aspx.cs">
+      <DependentUpon>UnpaidLoans.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CreditAdmin\UnpaidLoans.aspx.designer.cs">
+      <DependentUpon>UnpaidLoans.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CreditAdmin\Variation.aspx.cs">
+      <DependentUpon>Variation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CreditAdmin\Variation.aspx.designer.cs">
+      <DependentUpon>Variation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CreditAdmin\WithdrawalNotice.aspx.cs">
+      <DependentUpon>WithdrawalNotice.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CreditAdmin\WithdrawalNotice.aspx.designer.cs">
+      <DependentUpon>WithdrawalNotice.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CustomServAdmin\Beneficiary.aspx.cs">
+      <DependentUpon>Beneficiary.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CustomServAdmin\Beneficiary.aspx.designer.cs">
+      <DependentUpon>Beneficiary.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CustomServAdmin\CompanySetup.aspx.cs">
+      <DependentUpon>CompanySetup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CustomServAdmin\CompanySetup.aspx.designer.cs">
+      <DependentUpon>CompanySetup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CustomServAdmin\CustomServAdmin.aspx.cs">
+      <DependentUpon>CustomServAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CustomServAdmin\CustomServAdmin.aspx.designer.cs">
+      <DependentUpon>CustomServAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CustomServAdmin\CustomServAdmin.Master.cs">
+      <DependentUpon>CustomServAdmin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CustomServAdmin\CustomServAdmin.Master.designer.cs">
+      <DependentUpon>CustomServAdmin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="CustomServAdmin\GroupMembers.aspx.cs">
+      <DependentUpon>GroupMembers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CustomServAdmin\GroupMembers.aspx.designer.cs">
+      <DependentUpon>GroupMembers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CustomServAdmin\LoansInquiry.aspx.cs">
+      <DependentUpon>LoansInquiry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CustomServAdmin\LoansInquiry.aspx.designer.cs">
+      <DependentUpon>LoansInquiry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CustomServAdmin\MembershipRegistration.aspx.cs">
+      <DependentUpon>MembershipRegistration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CustomServAdmin\MembershipRegistration.aspx.designer.cs">
+      <DependentUpon>MembershipRegistration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CustomServAdmin\MPA3.aspx.cs">
+      <DependentUpon>MPA3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CustomServAdmin\MPA3.aspx.designer.cs">
+      <DependentUpon>MPA3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CustomServAdmin\MPA_Paymentposting.aspx.cs">
+      <DependentUpon>MPA_Paymentposting.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CustomServAdmin\MPA_Paymentposting.aspx.designer.cs">
+      <DependentUpon>MPA_Paymentposting.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CustomServAdmin\printreceipt.aspx.cs">
+      <DependentUpon>printreceipt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CustomServAdmin\printreceipt.aspx.designer.cs">
+      <DependentUpon>printreceipt.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CustomServAdmin\ReprintReceipt.aspx.cs">
+      <DependentUpon>ReprintReceipt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CustomServAdmin\ReprintReceipt.aspx.designer.cs">
+      <DependentUpon>ReprintReceipt.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CustomServAdmin\SharesInquiry.aspx.cs">
+      <DependentUpon>SharesInquiry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CustomServAdmin\SharesInquiry.aspx.designer.cs">
+      <DependentUpon>SharesInquiry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CustomServAdmin\SharetoLoanOffset.aspx.cs">
+      <DependentUpon>SharetoLoanOffset.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CustomServAdmin\SharetoLoanOffset.aspx.designer.cs">
+      <DependentUpon>SharetoLoanOffset.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CustomServAdmin\sharetransfers.aspx.cs">
+      <DependentUpon>sharetransfers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CustomServAdmin\sharetransfers.aspx.designer.cs">
+      <DependentUpon>sharetransfers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CustomServAdmin\Variation.aspx.cs">
+      <DependentUpon>Variation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CustomServAdmin\Variation.aspx.designer.cs">
+      <DependentUpon>Variation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Decryptor.cs" />
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DividendProcessing.aspx.cs">
+      <DependentUpon>DividendProcessing.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DividendProcessing.aspx.designer.cs">
+      <DependentUpon>DividendProcessing.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="easysacco_reports\aginganalysis.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>aginganalysis.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="easysacco_reports\AppliedLoans.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AppliedLoans.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="easysacco_reports\Applied_Loans.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Applied_Loans.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="easysacco_reports\AuditTrail_Time.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AuditTrail_Time.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="easysacco_reports\BalancesAsAt.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BalancesAsAt.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="easysacco_reports\ChequesIssued.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ChequesIssued.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="easysacco_reports\ChequesReceived.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ChequesReceived.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="easysacco_reports\Defaulters.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Defaulters.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="easysacco_reports\DeliveryListRpt.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DeliveryListRpt.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="easysacco_reports\Dividend List.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Dividend List.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="easysacco_reports\FullyDefaulters.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FullyDefaulters.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="easysacco_reports\individualsGuarantors.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>individualsGuarantors.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="easysacco_reports\Issued_Loans.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Issued_Loans.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="easysacco_reports\Loans Due.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Loans Due.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="easysacco_reports\LoanShareSummaries-member.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LoanShareSummaries-member.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="easysacco_reports\LoansStatement.cs">
+      <DependentUpon>LoansStatement.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="easysacco_reports\Loans_Applied.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Loans_Applied.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="easysacco_reports\LOANS_DUE.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LOANS_DUE.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="easysacco_reports\loans_due1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>loans_due1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="easysacco_reports\Loans_issued.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Loans_issued.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="easysacco_reports\Loan_Balances.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Loan_Balances.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="easysacco_reports\Loan_Recovery.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Loan_Recovery.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="easysacco_reports\members.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>members.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="easysacco_reports\memberssharestatement.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>memberssharestatement.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="easysacco_reports\newGuarantors.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>newGuarantors.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="easysacco_reports\partialDefaulters.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>partialDefaulters.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="easysacco_reports\periodicLoanRecovery.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>periodicLoanRecovery.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="easysacco_reports\PriodicShares.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PriodicShares.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="easysacco_reports\RejectedLoans.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RejectedLoans.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="easysacco_reports\Rejected_Loans.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Rejected_Loans.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="easysacco_reports\Shareholders Listing.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Shareholders Listing.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="easysacco_reports\SHARES AND LOAN SUMMARY.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SHARES AND LOAN SUMMARY.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="easysacco_reports\Sharesasat.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Sharesasat.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="easysacco_reports\ShareStatement.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ShareStatement.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="easysacco_reports\SharesVariations.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SharesVariations.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="easysacco_reports\SummaryRepayments.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SummaryRepayments.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="easysacco_reports\unPaidLoan.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>unPaidLoan.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FinanceAdmin\AccountSetup.aspx.cs">
+      <DependentUpon>AccountSetup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FinanceAdmin\AccountSetup.aspx.designer.cs">
+      <DependentUpon>AccountSetup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FinanceAdmin\Agents.aspx.cs">
+      <DependentUpon>Agents.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FinanceAdmin\Agents.aspx.designer.cs">
+      <DependentUpon>Agents.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FinanceAdmin\Beneficiary.aspx.cs">
+      <DependentUpon>Beneficiary.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FinanceAdmin\Beneficiary.aspx.designer.cs">
+      <DependentUpon>Beneficiary.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FinanceAdmin\BranchesList.aspx.cs">
+      <DependentUpon>BranchesList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FinanceAdmin\BranchesList.aspx.designer.cs">
+      <DependentUpon>BranchesList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FinanceAdmin\Budgeting.aspx.cs">
+      <DependentUpon>Budgeting.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FinanceAdmin\Budgeting.aspx.designer.cs">
+      <DependentUpon>Budgeting.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FinanceAdmin\CompanySetup.aspx.cs">
+      <DependentUpon>CompanySetup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FinanceAdmin\CompanySetup.aspx.designer.cs">
+      <DependentUpon>CompanySetup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FinanceAdmin\InvoicePayments.aspx.cs">
+      <DependentUpon>InvoicePayments.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FinanceAdmin\InvoicePayments.aspx.designer.cs">
+      <DependentUpon>InvoicePayments.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FinanceAdmin\Makerchecker.aspx.cs">
+      <DependentUpon>Makerchecker.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FinanceAdmin\Makerchecker.aspx.designer.cs">
+      <DependentUpon>Makerchecker.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FinanceAdmin\Receive_Invoices.aspx.cs">
+      <DependentUpon>Receive_Invoices.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FinanceAdmin\Receive_Invoices.aspx.designer.cs">
+      <DependentUpon>Receive_Invoices.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FinanceAdmin\FinanceAdmin.aspx.cs">
+      <DependentUpon>FinanceAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FinanceAdmin\FinanceAdmin.aspx.designer.cs">
+      <DependentUpon>FinanceAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FinanceAdmin\FinanceAdmin.Master.cs">
+      <DependentUpon>FinanceAdmin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FinanceAdmin\FinanceAdmin.Master.designer.cs">
+      <DependentUpon>FinanceAdmin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="FinanceAdmin\GLInquiry.aspx.cs">
+      <DependentUpon>GLInquiry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FinanceAdmin\GLInquiry.aspx.designer.cs">
+      <DependentUpon>GLInquiry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FinanceAdmin\GroupMembers.aspx.cs">
+      <DependentUpon>GroupMembers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FinanceAdmin\GroupMembers.aspx.designer.cs">
+      <DependentUpon>GroupMembers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FinanceAdmin\Journal Posting.aspx.cs">
+      <DependentUpon>Journal Posting.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FinanceAdmin\Journal Posting.aspx.designer.cs">
+      <DependentUpon>Journal Posting.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FinanceAdmin\LoanAppraisals.aspx.cs">
+      <DependentUpon>LoanAppraisals.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FinanceAdmin\LoanAppraisals.aspx.designer.cs">
+      <DependentUpon>LoanAppraisals.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FinanceAdmin\LoanEndorsements.aspx.cs">
+      <DependentUpon>LoanEndorsements.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FinanceAdmin\LoanEndorsements.aspx.designer.cs">
+      <DependentUpon>LoanEndorsements.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FinanceAdmin\LoanSchedule.aspx.cs">
+      <DependentUpon>LoanSchedule.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FinanceAdmin\LoanSchedule.aspx.designer.cs">
+      <DependentUpon>LoanSchedule.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FinanceAdmin\LoansInquiry.aspx.cs">
+      <DependentUpon>LoansInquiry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FinanceAdmin\LoansInquiry.aspx.designer.cs">
+      <DependentUpon>LoansInquiry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FinanceAdmin\membereport.aspx.cs">
+      <DependentUpon>membereport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FinanceAdmin\membereport.aspx.designer.cs">
+      <DependentUpon>membereport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FinanceAdmin\MembershipRegistration.aspx.cs">
+      <DependentUpon>MembershipRegistration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FinanceAdmin\MembershipRegistration.aspx.designer.cs">
+      <DependentUpon>MembershipRegistration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FinanceAdmin\MPA2.aspx.cs">
+      <DependentUpon>MPA2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FinanceAdmin\MPA2.aspx.designer.cs">
+      <DependentUpon>MPA2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FinanceAdmin\MPA_Paymentposting.aspx.cs">
+      <DependentUpon>MPA_Paymentposting.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FinanceAdmin\MPA_Paymentposting.aspx.designer.cs">
+      <DependentUpon>MPA_Paymentposting.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FinanceAdmin\Nominal.aspx.cs">
+      <DependentUpon>Nominal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FinanceAdmin\Nominal.aspx.designer.cs">
+      <DependentUpon>Nominal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FinanceAdmin\Nominal_Paymentposting.aspx.cs">
+      <DependentUpon>Nominal_Paymentposting.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FinanceAdmin\Nominal_Paymentposting.aspx.designer.cs">
+      <DependentUpon>Nominal_Paymentposting.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FinanceAdmin\PaymentOptions.aspx.cs">
+      <DependentUpon>PaymentOptions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FinanceAdmin\PaymentOptions.aspx.designer.cs">
+      <DependentUpon>PaymentOptions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FinanceAdmin\perloan.aspx.cs">
+      <DependentUpon>perloan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FinanceAdmin\perloan.aspx.designer.cs">
+      <DependentUpon>perloan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FinanceAdmin\perproduct.aspx.cs">
+      <DependentUpon>perproduct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FinanceAdmin\perproduct.aspx.designer.cs">
+      <DependentUpon>perproduct.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FinanceAdmin\printreceipt.aspx.cs">
+      <DependentUpon>printreceipt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FinanceAdmin\printreceipt.aspx.designer.cs">
+      <DependentUpon>printreceipt.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FinanceAdmin\ProcessDividend.aspx.cs">
+      <DependentUpon>ProcessDividend.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FinanceAdmin\ProcessDividend.aspx.designer.cs">
+      <DependentUpon>ProcessDividend.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FinanceAdmin\ReprintReceipt.aspx.cs">
+      <DependentUpon>ReprintReceipt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FinanceAdmin\ReprintReceipt.aspx.designer.cs">
+      <DependentUpon>ReprintReceipt.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FinanceAdmin\SharesInquiry.aspx.cs">
+      <DependentUpon>SharesInquiry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FinanceAdmin\SharesInquiry.aspx.designer.cs">
+      <DependentUpon>SharesInquiry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FinanceAdmin\ShareState.aspx.cs">
+      <DependentUpon>ShareState.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FinanceAdmin\ShareState.aspx.designer.cs">
+      <DependentUpon>ShareState.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FinanceAdmin\SharetoLoanOffset.aspx.cs">
+      <DependentUpon>SharetoLoanOffset.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FinanceAdmin\SharetoLoanOffset.aspx.designer.cs">
+      <DependentUpon>SharetoLoanOffset.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FinanceAdmin\sharetransfers.aspx.cs">
+      <DependentUpon>sharetransfers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FinanceAdmin\sharetransfers.aspx.designer.cs">
+      <DependentUpon>sharetransfers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FinanceAdmin\SupplierList.aspx.cs">
+      <DependentUpon>SupplierList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FinanceAdmin\SupplierList.aspx.designer.cs">
+      <DependentUpon>SupplierList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FinanceAdmin\suppliers.aspx.cs">
+      <DependentUpon>suppliers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FinanceAdmin\suppliers.aspx.designer.cs">
+      <DependentUpon>suppliers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FinanceAdmin\Transactions.aspx.cs">
+      <DependentUpon>Transactions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FinanceAdmin\Transactions.aspx.designer.cs">
+      <DependentUpon>Transactions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FinanceAdmin\TrialBalance.aspx.cs">
+      <DependentUpon>TrialBalance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FinanceAdmin\TrialBalance.aspx.designer.cs">
+      <DependentUpon>TrialBalance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FinanceAdmin\UnpaidLoans.aspx.cs">
+      <DependentUpon>UnpaidLoans.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FinanceAdmin\UnpaidLoans.aspx.designer.cs">
+      <DependentUpon>UnpaidLoans.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FinanceAdmin\Variation.aspx.cs">
+      <DependentUpon>Variation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FinanceAdmin\Variation.aspx.designer.cs">
+      <DependentUpon>Variation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FinanceAdmin\WithdrawalNotice.aspx.cs">
+      <DependentUpon>WithdrawalNotice.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FinanceAdmin\WithdrawalNotice.aspx.designer.cs">
+      <DependentUpon>WithdrawalNotice.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="General Ledgers1\AccountSetup.aspx.cs">
+      <DependentUpon>AccountSetup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="General Ledgers1\AccountSetup.aspx.designer.cs">
+      <DependentUpon>AccountSetup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="General Ledgers1\Budgeting.aspx.cs">
+      <DependentUpon>Budgeting.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="General Ledgers1\Budgeting.aspx.designer.cs">
+      <DependentUpon>Budgeting.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="General Ledgers1\GLInquiry.aspx.cs">
+      <DependentUpon>GLInquiry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="General Ledgers1\GLInquiry.aspx.designer.cs">
+      <DependentUpon>GLInquiry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="General Ledgers1\Journal Posting.aspx.cs">
+      <DependentUpon>Journal Posting.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="General Ledgers1\Journal Posting.aspx.designer.cs">
+      <DependentUpon>Journal Posting.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="General Ledgers1\JournalBatchPosting.aspx.cs">
+      <DependentUpon>JournalBatchPosting.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="General Ledgers1\JournalBatchPosting.aspx.designer.cs">
+      <DependentUpon>JournalBatchPosting.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="General Ledgers1\TRBalance.aspx.cs">
+      <DependentUpon>TRBalance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="General Ledgers1\TRBalance.aspx.designer.cs">
+      <DependentUpon>TRBalance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="General Ledgers1\trbnce.aspx.cs">
+      <DependentUpon>trbnce.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="General Ledgers1\trbnce.aspx.designer.cs">
+      <DependentUpon>trbnce.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="General Ledgers1\TrialBalance.aspx.cs">
+      <DependentUpon>TrialBalance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="General Ledgers1\TrialBalance.aspx.designer.cs">
+      <DependentUpon>TrialBalance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HR_Admin\Agents.aspx.cs">
+      <DependentUpon>Agents.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HR_Admin\Agents.aspx.designer.cs">
+      <DependentUpon>Agents.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HR_Admin\Beneficiary.aspx.cs">
+      <DependentUpon>Beneficiary.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HR_Admin\Beneficiary.aspx.designer.cs">
+      <DependentUpon>Beneficiary.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HR_Admin\CompanySetup.aspx.cs">
+      <DependentUpon>CompanySetup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HR_Admin\CompanySetup.aspx.designer.cs">
+      <DependentUpon>CompanySetup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HR_Admin\GroupMembers.aspx.cs">
+      <DependentUpon>GroupMembers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HR_Admin\GroupMembers.aspx.designer.cs">
+      <DependentUpon>GroupMembers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HR_Admin\HR_Admin.aspx.cs">
+      <DependentUpon>HR_Admin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HR_Admin\HR_Admin.aspx.designer.cs">
+      <DependentUpon>HR_Admin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HR_Admin\HR_Admin.Master.cs">
+      <DependentUpon>HR_Admin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HR_Admin\HR_Admin.Master.designer.cs">
+      <DependentUpon>HR_Admin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="HR_Admin\MembershipRegistration.aspx.cs">
+      <DependentUpon>MembershipRegistration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HR_Admin\MembershipRegistration.aspx.designer.cs">
+      <DependentUpon>MembershipRegistration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HR_Admin\MPA4.aspx.cs">
+      <DependentUpon>MPA4.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HR_Admin\MPA4.aspx.designer.cs">
+      <DependentUpon>MPA4.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HR_Admin\printreceipt.aspx.cs">
+      <DependentUpon>printreceipt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HR_Admin\printreceipt.aspx.designer.cs">
+      <DependentUpon>printreceipt.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HR_Admin\SharesInquiry.aspx.cs">
+      <DependentUpon>SharesInquiry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HR_Admin\SharesInquiry.aspx.designer.cs">
+      <DependentUpon>SharesInquiry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HR_Admin\Variation.aspx.cs">
+      <DependentUpon>Variation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HR_Admin\Variation.aspx.designer.cs">
+      <DependentUpon>Variation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LoansAdmin\Agents.aspx.cs">
+      <DependentUpon>Agents.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LoansAdmin\Agents.aspx.designer.cs">
+      <DependentUpon>Agents.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LoansAdmin\Beneficiary.aspx.cs">
+      <DependentUpon>Beneficiary.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LoansAdmin\Beneficiary.aspx.designer.cs">
+      <DependentUpon>Beneficiary.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LoansAdmin\CompanySetup.aspx.cs">
+      <DependentUpon>CompanySetup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LoansAdmin\CompanySetup.aspx.designer.cs">
+      <DependentUpon>CompanySetup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LoansAdmin\GroupApplication.aspx.cs">
+      <DependentUpon>GroupApplication.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LoansAdmin\GroupApplication.aspx.designer.cs">
+      <DependentUpon>GroupApplication.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LoansAdmin\GroupMembers.aspx.cs">
+      <DependentUpon>GroupMembers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LoansAdmin\GroupMembers.aspx.designer.cs">
+      <DependentUpon>GroupMembers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LoansAdmin\LoanApplications.aspx.cs">
+      <DependentUpon>LoanApplications.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LoansAdmin\LoanApplications.aspx.designer.cs">
+      <DependentUpon>LoanApplications.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LoansAdmin\LoanGuarantors.aspx.cs">
+      <DependentUpon>LoanGuarantors.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LoansAdmin\LoanGuarantors.aspx.designer.cs">
+      <DependentUpon>LoanGuarantors.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LoansAdmin\LoansAdmin.aspx.cs">
+      <DependentUpon>LoansAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LoansAdmin\LoansAdmin.aspx.designer.cs">
+      <DependentUpon>LoansAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LoansAdmin\LoansAdmin.Master.cs">
+      <DependentUpon>LoansAdmin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LoansAdmin\LoansAdmin.Master.designer.cs">
+      <DependentUpon>LoansAdmin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="LoansAdmin\LoanSchedule.aspx.cs">
+      <DependentUpon>LoanSchedule.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LoansAdmin\LoanSchedule.aspx.designer.cs">
+      <DependentUpon>LoanSchedule.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LoansAdmin\LoansInquiry.aspx.cs">
+      <DependentUpon>LoansInquiry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LoansAdmin\LoansInquiry.aspx.designer.cs">
+      <DependentUpon>LoansInquiry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LoansAdmin\MembershipRegistration.aspx.cs">
+      <DependentUpon>MembershipRegistration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LoansAdmin\MembershipRegistration.aspx.designer.cs">
+      <DependentUpon>MembershipRegistration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LoansAdmin\MPA5.aspx.cs">
+      <DependentUpon>MPA5.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LoansAdmin\MPA5.aspx.designer.cs">
+      <DependentUpon>MPA5.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LoansAdmin\MPA_Paymentposting.aspx.cs">
+      <DependentUpon>MPA_Paymentposting.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LoansAdmin\MPA_Paymentposting.aspx.designer.cs">
+      <DependentUpon>MPA_Paymentposting.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LoansAdmin\printreceipt.aspx.cs">
+      <DependentUpon>printreceipt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LoansAdmin\printreceipt.aspx.designer.cs">
+      <DependentUpon>printreceipt.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LoansAdmin\ReprintReceipt.aspx.cs">
+      <DependentUpon>ReprintReceipt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LoansAdmin\ReprintReceipt.aspx.designer.cs">
+      <DependentUpon>ReprintReceipt.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LoansAdmin\SharesInquiry.aspx.cs">
+      <DependentUpon>SharesInquiry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LoansAdmin\SharesInquiry.aspx.designer.cs">
+      <DependentUpon>SharesInquiry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LoansAdmin\SharetoLoanOffset.aspx.cs">
+      <DependentUpon>SharetoLoanOffset.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LoansAdmin\SharetoLoanOffset.aspx.designer.cs">
+      <DependentUpon>SharetoLoanOffset.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LoansAdmin\Variation.aspx.cs">
+      <DependentUpon>Variation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LoansAdmin\Variation.aspx.designer.cs">
+      <DependentUpon>Variation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="login.Master.cs">
+      <DependentUpon>login.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="login.Master.designer.cs">
+      <DependentUpon>login.Master</DependentUpon>
+    </Compile>
+    <Compile Include="LoginMaster.Master.cs">
+      <DependentUpon>LoginMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LoginMaster.Master.designer.cs">
+      <DependentUpon>LoginMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="ManagementAdmin\Beneficiary.aspx.cs">
+      <DependentUpon>Beneficiary.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ManagementAdmin\Beneficiary.aspx.designer.cs">
+      <DependentUpon>Beneficiary.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ManagementAdmin\CompanySetup.aspx.cs">
+      <DependentUpon>CompanySetup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ManagementAdmin\CompanySetup.aspx.designer.cs">
+      <DependentUpon>CompanySetup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ManagementAdmin\GroupMembers.aspx.cs">
+      <DependentUpon>GroupMembers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ManagementAdmin\GroupMembers.aspx.designer.cs">
+      <DependentUpon>GroupMembers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ManagementAdmin\ManagementAdmin.aspx.cs">
+      <DependentUpon>ManagementAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ManagementAdmin\ManagementAdmin.aspx.designer.cs">
+      <DependentUpon>ManagementAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ManagementAdmin\ManagementAdmin.Master.cs">
+      <DependentUpon>ManagementAdmin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ManagementAdmin\ManagementAdmin.Master.designer.cs">
+      <DependentUpon>ManagementAdmin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="ManagementAdmin\MPA1.aspx.cs">
+      <DependentUpon>MPA1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ManagementAdmin\MPA1.aspx.designer.cs">
+      <DependentUpon>MPA1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ManagementAdmin\printreceipt.aspx.cs">
+      <DependentUpon>printreceipt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ManagementAdmin\printreceipt.aspx.designer.cs">
+      <DependentUpon>printreceipt.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ManagementAdmin\SharesInquiry.aspx.cs">
+      <DependentUpon>SharesInquiry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ManagementAdmin\SharesInquiry.aspx.designer.cs">
+      <DependentUpon>SharesInquiry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ManagementAdmin\Variation.aspx.cs">
+      <DependentUpon>Variation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ManagementAdmin\Variation.aspx.designer.cs">
+      <DependentUpon>Variation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PrintDocument.cs" />
+    <Compile Include="PrintHelper.cs" />
+    <Compile Include="printreceipt.aspx.cs">
+      <DependentUpon>printreceipt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="printreceipt.aspx.designer.cs">
+      <DependentUpon>printreceipt.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Regions\Addnewmember.aspx.cs">
+      <DependentUpon>Addnewmember.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Regions\Addnewmember.aspx.designer.cs">
+      <DependentUpon>Addnewmember.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Regions\Branchmainpage.aspx.cs">
+      <DependentUpon>Branchmainpage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Regions\Branchmainpage.aspx.designer.cs">
+      <DependentUpon>Branchmainpage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Regions\Membersrpt.aspx.cs">
+      <DependentUpon>Membersrpt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Regions\Membersrpt.aspx.designer.cs">
+      <DependentUpon>Membersrpt.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Regions\RgnAgents.aspx.cs">
+      <DependentUpon>RgnAgents.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Regions\RgnAgents.aspx.designer.cs">
+      <DependentUpon>RgnAgents.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Regions\RgnBenefeciaries.aspx.cs">
+      <DependentUpon>RgnBenefeciaries.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Regions\RgnBenefeciaries.aspx.designer.cs">
+      <DependentUpon>RgnBenefeciaries.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\AppliedLoans.aspx.cs">
+      <DependentUpon>AppliedLoans.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\AppliedLoans.aspx.designer.cs">
+      <DependentUpon>AppliedLoans.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\AppraisalRPT.aspx.cs">
+      <DependentUpon>AppraisalRPT.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\AppraisalRPT.aspx.designer.cs">
+      <DependentUpon>AppraisalRPT.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\CrystalReport1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\CrystalReport2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\dividendreport.aspx.cs">
+      <DependentUpon>dividendreport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\dividendreport.aspx.designer.cs">
+      <DependentUpon>dividendreport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\GLinquiry.aspx.cs">
+      <DependentUpon>GLinquiry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\GLinquiry.aspx.designer.cs">
+      <DependentUpon>GLinquiry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\LoansStatement.aspx.cs">
+      <DependentUpon>LoansStatement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\LoansStatement.aspx.designer.cs">
+      <DependentUpon>LoansStatement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\membersharestatement.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>membersharestatement.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\mstatement.aspx.cs">
+      <DependentUpon>mstatement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\mstatement.aspx.designer.cs">
+      <DependentUpon>mstatement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\perloanreport.aspx.cs">
+      <DependentUpon>perloanreport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\perloanreport.aspx.designer.cs">
+      <DependentUpon>perloanreport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\perproductreport.aspx.cs">
+      <DependentUpon>perproductreport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\perproductreport.aspx.designer.cs">
+      <DependentUpon>perproductreport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\printstmt.aspx.cs">
+      <DependentUpon>printstmt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\printstmt.aspx.designer.cs">
+      <DependentUpon>printstmt.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ReportsViewer.aspx.cs">
+      <DependentUpon>ReportsViewer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\ReportsViewer.aspx.designer.cs">
+      <DependentUpon>ReportsViewer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\sharestatement.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sharestatement.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ShareStatementReport.aspx.cs">
+      <DependentUpon>ShareStatementReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\ShareStatementReport.aspx.designer.cs">
+      <DependentUpon>ShareStatementReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\statements.aspx.cs">
+      <DependentUpon>statements.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\statements.aspx.designer.cs">
+      <DependentUpon>statements.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="memberjuniorphoto.aspx.cs">
+      <DependentUpon>memberjuniorphoto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="memberjuniorphoto.aspx.designer.cs">
+      <DependentUpon>memberjuniorphoto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="memberphoto.aspx.cs">
+      <DependentUpon>memberphoto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="memberphoto.aspx.designer.cs">
+      <DependentUpon>memberphoto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CONNECTME.cs" />
+    <Compile Include="database.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Logout.aspx.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Logout.aspx.designer.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reports\unpaidLoans.aspx.cs">
+      <DependentUpon>unpaidLoans.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\unpaidLoans.aspx.designer.cs">
+      <DependentUpon>unpaidLoans.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\LoanScheduleReport.aspx.cs">
+      <DependentUpon>LoanScheduleReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\LoanScheduleReport.aspx.designer.cs">
+      <DependentUpon>LoanScheduleReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="SysAdmin\AccountCodes.aspx.cs">
+      <DependentUpon>AccountCodes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysAdmin\AccountCodes.aspx.designer.cs">
+      <DependentUpon>AccountCodes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SysAdmin\AddUser.aspx.cs">
+      <DependentUpon>AddUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysAdmin\AddUser.aspx.designer.cs">
+      <DependentUpon>AddUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SysAdmin\Agents.aspx.cs">
+      <DependentUpon>Agents.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysAdmin\Agents.aspx.designer.cs">
+      <DependentUpon>Agents.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SysAdmin\Bank Setup.aspx.cs">
+      <DependentUpon>Bank Setup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysAdmin\Bank Setup.aspx.designer.cs">
+      <DependentUpon>Bank Setup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SysAdmin\Beneficiary.aspx.cs">
+      <DependentUpon>Beneficiary.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysAdmin\Beneficiary.aspx.designer.cs">
+      <DependentUpon>Beneficiary.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SysAdmin\BranchCodes.aspx.cs">
+      <DependentUpon>BranchCodes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysAdmin\BranchCodes.aspx.designer.cs">
+      <DependentUpon>BranchCodes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SysAdmin\Collaterals.aspx.cs">
+      <DependentUpon>Collaterals.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysAdmin\Collaterals.aspx.designer.cs">
+      <DependentUpon>Collaterals.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SysAdmin\CompanySetup.aspx.cs">
+      <DependentUpon>CompanySetup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysAdmin\CompanySetup.aspx.designer.cs">
+      <DependentUpon>CompanySetup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SysAdmin\Defaults.aspx.cs">
+      <DependentUpon>Defaults.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysAdmin\Defaults.aspx.designer.cs">
+      <DependentUpon>Defaults.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SysAdmin\GroupMembers.aspx.cs">
+      <DependentUpon>GroupMembers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysAdmin\GroupMembers.aspx.designer.cs">
+      <DependentUpon>GroupMembers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SysAdmin\LoansInquiry.aspx.cs">
+      <DependentUpon>LoansInquiry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysAdmin\LoansInquiry.aspx.designer.cs">
+      <DependentUpon>LoansInquiry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SysAdmin\LoanType.aspx.cs">
+      <DependentUpon>LoanType.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysAdmin\LoanType.aspx.designer.cs">
+      <DependentUpon>LoanType.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SysAdmin\Locations.aspx.cs">
+      <DependentUpon>Locations.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysAdmin\Locations.aspx.designer.cs">
+      <DependentUpon>Locations.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SysAdmin\MembershipRegistration.aspx.cs">
+      <DependentUpon>MembershipRegistration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysAdmin\MembershipRegistration.aspx.designer.cs">
+      <DependentUpon>MembershipRegistration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SysAdmin\MPA.aspx.cs">
+      <DependentUpon>MPA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysAdmin\MPA.aspx.designer.cs">
+      <DependentUpon>MPA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SysAdmin\printreceipt.aspx.cs">
+      <DependentUpon>printreceipt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysAdmin\printreceipt.aspx.designer.cs">
+      <DependentUpon>printreceipt.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SysAdmin\ReprintReceipt.aspx.cs">
+      <DependentUpon>ReprintReceipt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysAdmin\ReprintReceipt.aspx.designer.cs">
+      <DependentUpon>ReprintReceipt.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SysAdmin\SharesInquiry.aspx.cs">
+      <DependentUpon>SharesInquiry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysAdmin\SharesInquiry.aspx.designer.cs">
+      <DependentUpon>SharesInquiry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SysAdmin\ShareTypes.aspx.cs">
+      <DependentUpon>ShareTypes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysAdmin\ShareTypes.aspx.designer.cs">
+      <DependentUpon>ShareTypes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SysAdmin\SocietyParameters.aspx.cs">
+      <DependentUpon>SocietyParameters.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysAdmin\SocietyParameters.aspx.designer.cs">
+      <DependentUpon>SocietyParameters.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SysAdmin\SubCounty.aspx.cs">
+      <DependentUpon>SubCounty.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysAdmin\SubCounty.aspx.designer.cs">
+      <DependentUpon>SubCounty.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SysAdmin\SysAdmin.Master.cs">
+      <DependentUpon>SysAdmin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysAdmin\SysAdmin.Master.designer.cs">
+      <DependentUpon>SysAdmin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="SysAdmin\SystemAdmin.aspx.cs">
+      <DependentUpon>SystemAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysAdmin\SystemAdmin.aspx.designer.cs">
+      <DependentUpon>SystemAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SysAdmin\USERGROUP.aspx.cs">
+      <DependentUpon>USERGROUP.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysAdmin\USERGROUP.aspx.designer.cs">
+      <DependentUpon>USERGROUP.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SysAdmin\Variation.aspx.cs">
+      <DependentUpon>Variation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysAdmin\Variation.aspx.designer.cs">
+      <DependentUpon>Variation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SysAdmin\Trans_Reversals.aspx.cs">
+      <DependentUpon>Trans_Reversals.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysAdmin\Trans_Reversals.aspx.designer.cs">
+      <DependentUpon>Trans_Reversals.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SysAdmin\Village.aspx.cs">
+      <DependentUpon>Village.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysAdmin\Village.aspx.designer.cs">
+      <DependentUpon>Village.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SysAdmin\Ward.aspx.cs">
+      <DependentUpon>Ward.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysAdmin\Ward.aspx.designer.cs">
+      <DependentUpon>Ward.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WARSOFT.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="LoansAdmin\LoansAdmin.Master" />
+    <Content Include="FinanceAdmin\FinanceAdmin.Master" />
+    <Content Include="CustomServAdmin\CustomServAdmin.Master" />
+    <Content Include="LoginMaster.Master" />
+    <Content Include="HR_Admin\HR_Admin.Master" />
+    <Content Include="ManagementAdmin\ManagementAdmin.Master" />
+    <Content Include="SysAdmin\SysAdmin.Master" />
+    <Content Include="SysAdmin\USERGROUP.aspx" />
+    <Content Include="SysAdmin\Variation.aspx" />
+    <Content Include="SysAdmin\Trans_Reversals.aspx" />
+    <Content Include="SysAdmin\Village.aspx" />
+    <Content Include="SysAdmin\Ward.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Reports\Site.Master" />
+    <Content Include="Site.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="CrystalAnalysisCommLayerLib">
+      <Guid>{AAA3345B-2177-4D19-8D75-21688FE36251}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="CrystalEnterpriseLib">
+      <Guid>{8D214C48-EC2D-47FA-82C5-674B29D1478D}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="CrystalFileRepositoryLib">
+      <Guid>{772E9CD1-CD82-4DB7-AD4B-E296F33111D1}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="CrystalInfoStoreLib">
+      <Guid>{DC56B6C6-B217-4054-A769-64965A159667}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="CrystalPluginMgrLib">
+      <Guid>{016E95C5-C6A2-40CF-96E3-02692E01F122}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="CrystalReportsCommonObjectModelLib">
+      <Guid>{0A2D3BCE-4B8F-45C9-8E99-A8CC164C6300}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="CrystalReportsControllersLib">
+      <Guid>{FA810FF5-70DA-4F98-A5E3-387D9577EF24}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="CrystalReportsCubeDefModelLib">
+      <Guid>{44AD71D4-4905-491D-B179-B5D91EB57374}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="CrystalReportsDataDefModelLib">
+      <Guid>{9B2F3E7B-8D45-47E8-95D3-3A9C1B22437F}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="CrystalReportsReportDefModelLib">
+      <Guid>{BF40B97D-06EA-4AB1-91DE-18CB29A2B25A}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="CrystalReportViewerWebReportSourceLib">
+      <Guid>{F9DDE1B4-E307-4A5F-A2EA-F35C0A923CD2}</Guid>
+      <VersionMajor>10</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="CrystalServerPluginLib">
+      <Guid>{EDEB3B46-33D9-4659-9CF7-9C93DC86C1E2}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="PrintUIObjLib">
+      <Guid>{438EDB38-282C-435D-8BE3-4AB90B83CEF5}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="RepositoryExplorerLib">
+      <Guid>{427E7B44-214E-4BC7-9D8A-49A58AC2B2C2}</Guid>
+      <VersionMajor>10</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="login.Master" />
+    <Content Include="CreditAdmin\CreditAdmin.Master" />
+    <Content Include="ClientAdmin\ClientAdmin.Master" />
+    <None Include="Properties\PublishProfiles\EASYSACCOHOSTED.pubxml" />
+    <None Include="Properties\PublishProfiles\Profile1.pubxml" />
+    <None Include="Properties\PublishProfiles\WORLDBANK.pubxml" />
+    <None Include="Reports\CrystalReport3.mht" />
+    <None Include="Reports\DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reports\DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\loansStatement.rpt" />
+    <None Include="Reports\LoanStatement.rpt" />
+    <None Include="Reports\sharestatement.xsc">
+      <DependentUpon>sharestatement.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\sharestatement.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sharestatement.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reports\sharestatement.xss">
+      <DependentUpon>sharestatement.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="easysacco_reports\aginganalysis.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>aginganalysis.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="easysacco_reports\AppliedLoans.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>AppliedLoans.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="easysacco_reports\Applied_Loans.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Applied_Loans.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="easysacco_reports\AuditTrail_Time.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>AuditTrail_Time.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="easysacco_reports\BalancesAsAt.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>BalancesAsAt.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="easysacco_reports\ChequesIssued.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ChequesIssued.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="easysacco_reports\ChequesReceived.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ChequesReceived.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="easysacco_reports\Defaulters.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Defaulters.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="easysacco_reports\DeliveryListRpt.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>DeliveryListRpt.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="easysacco_reports\Dividend List.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Dividend List.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="easysacco_reports\FullyDefaulters.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>FullyDefaulters.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="easysacco_reports\individualsGuarantors.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>individualsGuarantors.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="easysacco_reports\Issued_Loans.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Issued_Loans.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="easysacco_reports\Loans Due.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Loans Due.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="easysacco_reports\LoanShareSummaries-member.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>LoanShareSummaries-member.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="easysacco_reports\LoansStatement.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>LoansStatement.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="easysacco_reports\Loans_Applied.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Loans_Applied.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="easysacco_reports\LOANS_DUE.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>LOANS_DUE.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="easysacco_reports\loans_due1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>loans_due1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="easysacco_reports\Loans_issued.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Loans_issued.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="easysacco_reports\Loan_Balances.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Loan_Balances.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="easysacco_reports\Loan_Recovery.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Loan_Recovery.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="easysacco_reports\members.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>members.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="easysacco_reports\memberssharestatement.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>memberssharestatement.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="easysacco_reports\newGuarantors.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>newGuarantors.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="easysacco_reports\partialDefaulters.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>partialDefaulters.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="easysacco_reports\periodicLoanRecovery.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>periodicLoanRecovery.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="easysacco_reports\PriodicShares.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>PriodicShares.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="easysacco_reports\RejectedLoans.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RejectedLoans.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="easysacco_reports\Rejected_Loans.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Rejected_Loans.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="easysacco_reports\Shareholders Listing.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Shareholders Listing.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="easysacco_reports\SHARES AND LOAN SUMMARY.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SHARES AND LOAN SUMMARY.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="easysacco_reports\Sharesasat.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Sharesasat.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="easysacco_reports\ShareStatement.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ShareStatement.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="easysacco_reports\SharesVariations.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SharesVariations.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="easysacco_reports\SummaryRepayments.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SummaryRepayments.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="easysacco_reports\unPaidLoan.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>unPaidLoan.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\CrystalReport1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\CrystalReport2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport2.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\membersharestatement.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>membersharestatement.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>2482</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

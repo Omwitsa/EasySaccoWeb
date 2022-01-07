@@ -1,0 +1,127 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="login.master.cs" Inherits="EasyMa.login" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="server" runat="server">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
+    <title></title>
+    <link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+    .UpperCaseFirstLetter
+        {
+            text-transform:capitalize;
+            text-decoration: underline;
+        }
+        .menu
+        {
+            font-weight: 400;
+            font-family: "Segoe UI";
+        }
+        .menu
+        {
+            font-weight: 400;
+            font-family: "Segoe UI";
+        }
+        .menu
+        {
+            letter-spacing: 1pt;
+            font-family: "Segoe UI";
+        }
+        .menu
+        {
+            font-weight: 400;
+            font-family: "Segoe UI";
+        }
+        .menu
+        {
+            font-weight: 600;
+            font-family: "Times New Roman";
+        }
+        .menu
+        {
+            font-size: medium;
+            font-weight: 400;
+            font-family: "Times New Roman";
+        }
+        .menu
+        {
+            font-size: medium;
+            font-weight: 400;
+            font-family: "Times New Roman";
+        }
+        .menu
+        {
+            font-size: medium;
+            font-weight: 400;
+            font-family: "Times New Roman";
+        }
+        .menu
+        {
+            font-weight: 400;
+            font-family: "Segoe UI";
+        }
+        .menu
+        {
+            font-size: small;
+            font-weight: 400;
+            font-family: "Segoe UI";
+        }
+        .menu
+        {
+            font-size: medium ;
+            font-weight: 400;
+            font-family: Segoe Marker ;
+        }
+    </style>
+</head>
+<body>
+    <form id="Form1" runat="server">
+    <div class="page">
+        <div class="header" 
+            style="background-color: #04B4AE; top: 0px; left: 0px; height: 144px;">
+            <div style="width: 292px; height: 154px; position: relative; top: 0px; left: 0px;">
+                <asp:Image ID="Image1" runat="server" Height="138px" 
+                    ImageUrl="~/Images/photo_verybig_195019.jpg" Width="738px" 
+                    style="margin-top: 0px; margin-left: 0px;" />
+            </div>
+            <div class="clear hideSkiplink" 
+                
+                
+                
+                style="position: relative; background-color: #04B4AE; background-image: url('/images/footer.jpg'); top: -13px; left: 0px; height: 4px;">
+
+            </div>
+            <div style="position: relative; top: -109px; left: 744px; width: 208px; height: 44px;">
+&nbsp;&nbsp;
+                <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
+                <asp:Label ID="Label2" runat="server" Font-Bold="false" ForeColor="White" 
+                    style="color: White" CssClass="UpperCaseFirstLetter"></asp:Label>
+                <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
+                <asp:Label ID="Label4" runat="server" Font-Bold="false" ForeColor="White" 
+                    style="color: White" CssClass="UpperCaseFirstLetter"></asp:Label>
+                <br />
+            </div>
+            <div style="position: relative; top: -80px; left: 871px; width: 88px; margin-top: 0px;">
+                <asp:LinkButton ID="LinkButton1" runat="server" onclick="LinkButton1_Click1" 
+                    Width="70px" Font-Bold="True" ForeColor="White" >BACK</asp:LinkButton>
+            </div>
+        </div>
+        <div class="main" 
+            style="clear: both; overflow: auto; width: 1062px; height: 521px;">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+                <p>
+                </p>
+            </asp:ContentPlaceHolder>
+        </div>
+    </div>
+    <div class="footer"
+        style="background-color: #FFFFFF; width: 966px; background-image: url('/images/footer.jpg'); height: 19px;">
+        Copyright <em>&copy;</em> <%: DateTime.Now.Year %>|<em> Easy Sacco | </em>P<em>owered 
+        by Amtech Technologies Limited.</em></div>
+    </form>
+</body>
+</html>

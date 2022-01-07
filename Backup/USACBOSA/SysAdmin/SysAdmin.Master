@@ -1,0 +1,191 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="SysAdmin.master.cs" Inherits="USACBOSA.SysAdmin.SysAdmin" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="server" runat="server">
+    <title></title>
+    <link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+    .UpperCaseFirstLetter
+        {
+            text-transform:capitalize;
+            text-decoration: underline;
+        }
+        .menu
+        {
+            font-weight: 400;
+            font-family: "Segoe UI";
+        }
+        .menu
+        {
+            font-weight: 400;
+            font-family: "Segoe UI";
+        }
+        .menu
+        {
+            letter-spacing: 1pt;
+            font-family: "Segoe UI";
+        }
+        .menu
+        {
+            font-weight: 400;
+            font-family: "Segoe UI";
+        }
+        .menu
+        {
+            font-weight: 600;
+            font-family: "Times New Roman";
+        }
+        .menu
+        {
+            font-size: medium;
+            font-weight: 400;
+            font-family: "Times New Roman";
+        }
+        .menu
+        {
+            font-size: medium;
+            font-weight: 400;
+            font-family: "Times New Roman";
+        }
+        .menu
+        {
+            font-size: medium;
+            font-weight: 400;
+            font-family: "Times New Roman";
+        }
+        .menu
+        {
+            font-weight: 400;
+            font-family: "Segoe UI";
+        }
+        .menu
+        {
+            font-size: small;
+            font-weight: 400;
+            font-family: "Segoe UI";
+        }
+        .menu
+        {
+            font-size: medium ;
+            font-weight: 400;
+            font-family: Segoe Marker ;
+        }
+    </style>
+</head>
+<body>
+    <form id="Form1" runat="server">
+    <div class="page">
+        <div class="header" 
+            style="background-color: #04B4AE; top: 0px; left: 0px; height: 144px;">
+            <div style="width: 292px; height: 154px; position: relative; top: 0px; left: 0px;">
+                <asp:Image ID="Image1" runat="server" Height="136px" 
+                    ImageUrl="~/images/sacco_logo.JPG" Width="498px" 
+                    style="margin-top: 0px; margin-left: 0px;" />
+            </div>
+            <div class="clear hideSkiplink" 
+                
+                style="position: relative; background-color: #04B4AE; background-image: url('/images/footer.jpg'); top: -13px; left: 0px; height: 37px;">
+                <asp:Menu ID="NavigationMenu" runat="server" CssClass="menu" 
+                    EnableViewState="false" IncludeStyleBlock="false" Orientation="Horizontal" 
+                    Font-Size="7pt" onmenuitemclick="NavigationMenu_MenuItemClick2">
+                    <Items>
+                        <asp:MenuItem Text="Setup Information" Value="Setup Information">
+                            <asp:MenuItem Text="User Management" Value="User Management" 
+                                NavigateUrl="~/SysAdmin/AddUser.aspx">
+                            </asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/SysAdmin/SocietyParameters.aspx" 
+                                Text="Society Parameters" Value="Society Parameters"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/SysAdmin/LoanType.aspx" Text="Loan Types" 
+                                Value="Loan Types"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/SysAdmin/ShareTypes.aspx" Text="Share Types" 
+                                Value="Share Types"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/SysAdmin/Defaults.aspx" Text="Member Defaults" 
+                                Value="Member Defaults"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/SysAdmin/Locations.aspx" Text="Locations" 
+                                Value="Locations"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/SysAdmin/Bank Setup.aspx" Text="Banks Setup" 
+                                Value="Banks Setup">
+                            </asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/SysAdmin/AccountCodes.aspx" Text="Account Codes" 
+                                Value="Account Codes"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/SysAdmin/Collaterals.aspx" Text="Collaterals" 
+                                Value="Collaterals"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/SysAdmin/BranchCodes.aspx" Text="Branch Codes" 
+                                Value="Branch Codes"></asp:MenuItem>
+                        </asp:MenuItem>
+                        <asp:MenuItem Text="Records" Value="Records">
+                            <asp:MenuItem NavigateUrl="~/SysAdmin/MembershipRegistration.aspx" 
+                                Text="Membership Registration" Value="Membership Registration">
+                            </asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/SysAdmin/Beneficiary.aspx" Text="Beneficiaries" 
+                                Value="Beneficiaries"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/SysAdmin/CompanySetup.aspx" 
+                                Text="Group Registration" Value="Group Registration"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/SysAdmin/Agents.aspx" Text="Recruitment Agents" 
+                                Value="Recruitment Agents"></asp:MenuItem>
+                        </asp:MenuItem>
+                        <asp:MenuItem Text="Transactions" Value="Member Transactions">
+                            <asp:MenuItem Text="Receipt Posting" Value="Receipt Posting" 
+                                NavigateUrl="~/SysAdmin/MPA.aspx">
+                            </asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/SysAdmin/Trans_Reversals.aspx" 
+                                Text="Share Reversals" Value="Share Reversals"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/SysAdmin/ReprintReceipt.aspx" 
+                                Text="Reprint Member Receipt" Value="Reprint Member Receipt"></asp:MenuItem>
+                        </asp:MenuItem>
+                        <asp:MenuItem Text="Enquiries" Value="Enquiries">
+                            <asp:MenuItem NavigateUrl="~/SysAdmin/SharesInquiry.aspx" Text="Shares Inquiry" 
+                                Value="Shares Inquiry"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/SysAdmin/LoansInquiry.aspx" Text="Loans Inquiry" 
+                                Value="Loans Inquiry"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/SysAdmin/Variation.aspx" Text="Share Variations" 
+                                Value="Share Variations"></asp:MenuItem>
+                        </asp:MenuItem>
+                        <asp:MenuItem Text="Reports" Value="Reports">
+                            <asp:MenuItem NavigateUrl="~/Reports/ReportsViewer.aspx?reportType=AuditTrail_Time" 
+                                Text="Audit Trail" Value="Audit Trail"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Reports/ReportsViewer.aspx?reportType=memberstatement" 
+                                Text="Member Statement" Value="Member Statement"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Reports/mstatement.aspx" Text="Print Statement" 
+                                Value="Print Statement"></asp:MenuItem>
+                        </asp:MenuItem>
+                        <asp:MenuItem Text="Signout" Value="Signout" NavigateUrl="~/Logout.aspx">
+                        </asp:MenuItem>
+                    </Items>
+                </asp:Menu>
+
+            </div>
+            <div style="position: relative; top: -129px; left: 508px; width: 445px; height: 68px;">
+                <asp:Label ID="Label2" runat="server" Font-Bold="True" ForeColor="White" 
+                    style="color: White" CssClass="UpperCaseFirstLetter"></asp:Label>
+                <br />
+                <asp:Label ID="Label4" runat="server" Font-Bold="True" ForeColor="White" 
+                    style="color: White" CssClass="UpperCaseFirstLetter"></asp:Label>
+                <br />
+                <br />
+                <asp:LinkButton ID="LinkButton1" runat="server" onclick="LinkButton1_Click1" 
+                    Width="129px" Font-Bold="True" ForeColor="White" >Change Pasword</asp:LinkButton>
+                <br />
+            </div>
+        </div>
+      <div class="main" 
+            
+            style="overflow: scroll;background-color: #CCFFFF; width: 1065px; height: 500px;">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+                
+            </asp:ContentPlaceHolder>
+        </div>
+    </div>
+    <div class="footer"
+        
+        style="background-color: #FFFFCC; width: 966px; background-image: url('/images/footer.jpg'); height: 19px; color: #008000; font-weight: bold;">
+        Copyright <em>&copy;</em> <%: DateTime.Now.Year %>|<em> Easy Sacco | </em>P<em>owered 
+        by Amtech Technologies Limited.</em></div>
+    </form>
+</body>
+</html>
+
+

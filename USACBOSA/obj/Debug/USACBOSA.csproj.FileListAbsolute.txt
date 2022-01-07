@@ -1,0 +1,287 @@
+F:\USACBOSA\USACBOSA\obj\Debug\ResolveAssemblyReference.cache
+F:\USACBOSA\USACBOSA\bin\USACBOSA.dll
+F:\USACBOSA\USACBOSA\bin\USACBOSA.pdb
+F:\USACBOSA\USACBOSA\obj\Debug\USACBOSA.dll
+F:\USACBOSA\USACBOSA\obj\Debug\USACBOSA.pdb
+C:\Users\REDMON\Desktop\New folder\USACBOSA\bin\USACBOSA.dll
+C:\Users\REDMON\Desktop\New folder\USACBOSA\bin\USACBOSA.pdb
+C:\Users\REDMON\Desktop\New folder\USACBOSA\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\REDMON\Desktop\New folder\USACBOSA\obj\Debug\USACBOSA.dll
+C:\Users\REDMON\Desktop\New folder\USACBOSA\obj\Debug\USACBOSA.pdb
+D:\FEB_SACCO\USACBOSA\bin\USACBOSA.dll
+D:\FEB_SACCO\USACBOSA\bin\USACBOSA.pdb
+D:\FEB_SACCO\USACBOSA\obj\Debug\USACBOSA.dll
+D:\FEB_SACCO\USACBOSA\obj\Debug\USACBOSA.pdb
+C:\Users\REDMON\Desktop\New folder (2)\Easysacco\USACBOSA\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\REDMON\Desktop\New folder (2)\Easysacco\USACBOSA\bin\USACBOSA.dll
+C:\Users\REDMON\Desktop\New folder (2)\Easysacco\USACBOSA\bin\USACBOSA.pdb
+C:\Users\REDMON\Desktop\New folder (2)\Easysacco\USACBOSA\bin\AjaxControlToolkit.dll
+C:\Users\REDMON\Desktop\New folder (2)\Easysacco\USACBOSA\obj\Debug\USACBOSA.dll
+C:\Users\REDMON\Desktop\New folder (2)\Easysacco\USACBOSA\obj\Debug\USACBOSA.pdb
+D:\FEB_SACCO\Easysacco\USACBOSA\bin\USACBOSA.dll
+D:\FEB_SACCO\Easysacco\USACBOSA\bin\USACBOSA.pdb
+D:\FEB_SACCO\Easysacco\USACBOSA\obj\Debug\USACBOSA.dll
+D:\FEB_SACCO\Easysacco\USACBOSA\obj\Debug\USACBOSA.pdb
+E:\main\FEP\Easysacco\USACBOSA\bin\USACBOSA.dll
+E:\main\FEP\Easysacco\USACBOSA\bin\USACBOSA.pdb
+E:\main\FEP\Easysacco\USACBOSA\obj\Debug\ResolveAssemblyReference.cache
+E:\main\FEP\Easysacco\USACBOSA\obj\Debug\USACBOSA.dll
+E:\main\FEP\Easysacco\USACBOSA\obj\Debug\USACBOSA.pdb
+E:\main\FEP\From Amos\Easysacco\USACBOSA\bin\USACBOSA.dll
+E:\main\FEP\From Amos\Easysacco\USACBOSA\bin\USACBOSA.pdb
+E:\main\FEP\From Amos\Easysacco\USACBOSA\bin\Neodynamic.SDK.WebClientPrint.dll
+E:\main\FEP\From Amos\Easysacco\USACBOSA\bin\Neodynamic.SDK.WebClientPrint.xml
+E:\main\FEP\From Amos\Easysacco\USACBOSA\obj\Debug\ResolveAssemblyReference.cache
+E:\main\FEP\From Amos\Easysacco\USACBOSA\obj\Debug\USACBOSA.dll
+E:\main\FEP\From Amos\Easysacco\USACBOSA\obj\Debug\USACBOSA.pdb
+D:\chelele\From Amos\Easysacco\USACBOSA\bin\USACBOSA.dll
+D:\chelele\From Amos\Easysacco\USACBOSA\bin\USACBOSA.pdb
+D:\chelele\From Amos\Easysacco\USACBOSA\bin\Neodynamic.SDK.WebClientPrint.dll
+D:\chelele\From Amos\Easysacco\USACBOSA\bin\Neodynamic.SDK.WebClientPrint.xml
+D:\chelele\From Amos\Easysacco\USACBOSA\obj\Debug\ResolveAssemblyReference.cache
+D:\chelele\From Amos\Easysacco\USACBOSA\obj\Debug\Interop.PrintUIObjLib.dll
+D:\chelele\From Amos\Easysacco\USACBOSA\obj\Debug\USACBOSA.csproj.ResolveComReference.cache
+D:\chelele\From Amos\Easysacco\USACBOSA\obj\Debug\USACBOSA.dll
+D:\chelele\From Amos\Easysacco\USACBOSA\obj\Debug\USACBOSA.pdb
+C:\Users\REDMON\Desktop\From Amos\Easysacco\USACBOSA\bin\USACBOSA.dll
+C:\Users\REDMON\Desktop\From Amos\Easysacco\USACBOSA\bin\USACBOSA.pdb
+C:\Users\REDMON\Desktop\From Amos\Easysacco\USACBOSA\bin\Neodynamic.SDK.WebClientPrint.dll
+C:\Users\REDMON\Desktop\From Amos\Easysacco\USACBOSA\bin\Neodynamic.SDK.WebClientPrint.xml
+C:\Users\REDMON\Desktop\From Amos\Easysacco\USACBOSA\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\REDMON\Desktop\From Amos\Easysacco\USACBOSA\obj\Debug\Interop.PrintUIObjLib.dll
+C:\Users\REDMON\Desktop\From Amos\Easysacco\USACBOSA\obj\Debug\USACBOSA.csproj.ResolveComReference.cache
+C:\Users\REDMON\Desktop\From Amos\Easysacco\USACBOSA\obj\Debug\USACBOSA.dll
+C:\Users\REDMON\Desktop\From Amos\Easysacco\USACBOSA\obj\Debug\USACBOSA.pdb
+D:\main\FEP\From Amos\Easysacco\USACBOSA\bin\USACBOSA.dll
+D:\main\FEP\From Amos\Easysacco\USACBOSA\bin\USACBOSA.pdb
+D:\main\FEP\From Amos\Easysacco\USACBOSA\bin\Neodynamic.SDK.WebClientPrint.dll
+D:\main\FEP\From Amos\Easysacco\USACBOSA\bin\Neodynamic.SDK.WebClientPrint.xml
+D:\main\FEP\From Amos\Easysacco\USACBOSA\obj\Debug\ResolveAssemblyReference.cache
+D:\main\FEP\From Amos\Easysacco\USACBOSA\obj\Debug\Interop.PrintUIObjLib.dll
+D:\main\FEP\From Amos\Easysacco\USACBOSA\obj\Debug\USACBOSA.csproj.ResolveComReference.cache
+D:\main\FEP\From Amos\Easysacco\USACBOSA\obj\Debug\USACBOSA.dll
+D:\main\FEP\From Amos\Easysacco\USACBOSA\obj\Debug\USACBOSA.pdb
+D:\From Amos\Easysacco\USACBOSA\bin\USACBOSA.dll
+D:\From Amos\Easysacco\USACBOSA\bin\USACBOSA.pdb
+D:\From Amos\Easysacco\USACBOSA\bin\Neodynamic.SDK.WebClientPrint.dll
+D:\From Amos\Easysacco\USACBOSA\bin\Neodynamic.SDK.WebClientPrint.xml
+D:\From Amos\Easysacco\USACBOSA\obj\Debug\USACBOSA.csprojResolveAssemblyReference.cache
+D:\From Amos\Easysacco\USACBOSA\obj\Debug\Interop.PrintUIObjLib.dll
+D:\From Amos\Easysacco\USACBOSA\obj\Debug\USACBOSA.csproj.ResolveComReference.cache
+D:\From Amos\Easysacco\USACBOSA\obj\Debug\USACBOSA.dll
+D:\From Amos\Easysacco\USACBOSA\obj\Debug\USACBOSA.pdb
+D:\FEB SACCO\Easysacco\USACBOSA\bin\USACBOSA.dll
+D:\FEB SACCO\Easysacco\USACBOSA\bin\USACBOSA.pdb
+D:\FEB SACCO\Easysacco\USACBOSA\bin\Neodynamic.SDK.WebClientPrint.dll
+D:\FEB SACCO\Easysacco\USACBOSA\bin\Neodynamic.SDK.WebClientPrint.xml
+D:\FEB SACCO\Easysacco\USACBOSA\obj\Debug\Interop.PrintUIObjLib.dll
+D:\FEB SACCO\Easysacco\USACBOSA\obj\Debug\USACBOSA.csproj.ResolveComReference.cache
+D:\FEB SACCO\Easysacco\USACBOSA\obj\Debug\USACBOSA.dll
+D:\FEB SACCO\Easysacco\USACBOSA\obj\Debug\USACBOSA.pdb
+D:\FEB SACCO\Easysacco\USACBOSA\obj\Debug\USACBOSA.csprojResolveAssemblyReference.cache
+D:\Amos\Easysacco\USACBOSA\bin\USACBOSA.dll
+D:\Amos\Easysacco\USACBOSA\bin\USACBOSA.pdb
+D:\Amos\Easysacco\USACBOSA\obj\Debug\ResolveAssemblyReference.cache
+D:\Amos\Easysacco\USACBOSA\obj\Debug\Interop.PrintUIObjLib.dll
+D:\Amos\Easysacco\USACBOSA\obj\Debug\USACBOSA.csproj.ResolveComReference.cache
+D:\Amos\Easysacco\USACBOSA\obj\Debug\USACBOSA.dll
+D:\Amos\Easysacco\USACBOSA\obj\Debug\USACBOSA.pdb
+E:\Easysacco\USACBOSA\bin\USACBOSA.dll
+E:\Easysacco\USACBOSA\bin\USACBOSA.pdb
+E:\Easysacco\USACBOSA\obj\Debug\Interop.PrintUIObjLib.dll
+E:\Easysacco\USACBOSA\obj\Debug\USACBOSA.csproj.ResolveComReference.cache
+E:\Easysacco\USACBOSA\obj\Debug\USACBOSA.dll
+E:\Easysacco\USACBOSA\obj\Debug\USACBOSA.pdb
+D:\Angaza\Easysacco\USACBOSA\bin\USACBOSA.dll
+D:\Angaza\Easysacco\USACBOSA\bin\USACBOSA.pdb
+D:\Angaza\Easysacco\USACBOSA\bin\Neodynamic.SDK.WebClientPrint.dll
+D:\Angaza\Easysacco\USACBOSA\bin\Neodynamic.SDK.WebClientPrint.xml
+D:\Angaza\Easysacco\USACBOSA\obj\Debug\Interop.PrintUIObjLib.dll
+D:\Angaza\Easysacco\USACBOSA\obj\Debug\USACBOSA.csproj.ResolveComReference.cache
+D:\Angaza\Easysacco\USACBOSA\obj\Debug\USACBOSA.dll
+D:\Angaza\Easysacco\USACBOSA\obj\Debug\USACBOSA.pdb
+D:\EASY SACCO\Easysacco\USACBOSA\bin\USACBOSA.dll
+D:\EASY SACCO\Easysacco\USACBOSA\bin\USACBOSA.pdb
+D:\EASY SACCO\Easysacco\USACBOSA\bin\Neodynamic.SDK.WebClientPrint.dll
+D:\EASY SACCO\Easysacco\USACBOSA\obj\Debug\Interop.PrintUIObjLib.dll
+D:\EASY SACCO\Easysacco\USACBOSA\obj\Debug\USACBOSA.csproj.ResolveComReference.cache
+D:\EASY SACCO\Easysacco\USACBOSA\obj\Debug\USACBOSA.dll
+D:\EASY SACCO\Easysacco\USACBOSA\obj\Debug\USACBOSA.pdb
+D:\FEP\Easysacco\Easysacco\USACBOSA\bin\USACBOSA.dll
+D:\FEP\Easysacco\Easysacco\USACBOSA\bin\USACBOSA.pdb
+D:\FEP\Easysacco\Easysacco\USACBOSA\bin\Neodynamic.SDK.WebClientPrint.dll
+D:\FEP\Easysacco\Easysacco\USACBOSA\bin\Neodynamic.SDK.WebClientPrint.xml
+D:\FEP\Easysacco\Easysacco\USACBOSA\obj\Debug\USACBOSA.csprojResolveAssemblyReference.cache
+D:\FEP\Easysacco\Easysacco\USACBOSA\obj\Debug\Interop.PrintUIObjLib.dll
+D:\FEP\Easysacco\Easysacco\USACBOSA\obj\Debug\USACBOSA.csproj.ResolveComReference.cache
+D:\FEP\Easysacco\Easysacco\USACBOSA\obj\Debug\USACBOSA.dll
+D:\FEP\Easysacco\Easysacco\USACBOSA\obj\Debug\USACBOSA.pdb
+D:\FEB SACCO\2017\Easysacco\USACBOSA\bin\USACBOSA.dll
+D:\FEB SACCO\2017\Easysacco\USACBOSA\bin\USACBOSA.pdb
+D:\FEB SACCO\2017\Easysacco\USACBOSA\bin\Neodynamic.SDK.WebClientPrint.dll
+D:\FEB SACCO\2017\Easysacco\USACBOSA\bin\Neodynamic.SDK.WebClientPrint.xml
+D:\FEB SACCO\2017\Easysacco\USACBOSA\obj\Debug\USACBOSA.csprojResolveAssemblyReference.cache
+D:\FEB SACCO\2017\Easysacco\USACBOSA\obj\Debug\Interop.PrintUIObjLib.dll
+D:\FEB SACCO\2017\Easysacco\USACBOSA\obj\Debug\USACBOSA.csproj.ResolveComReference.cache
+D:\FEB SACCO\2017\Easysacco\USACBOSA\obj\Debug\USACBOSA.dll
+D:\FEB SACCO\2017\Easysacco\USACBOSA\obj\Debug\USACBOSA.pdb
+F:\FEB SACCO\2017\Easysacco\USACBOSA\bin\USACBOSA.dll
+F:\FEB SACCO\2017\Easysacco\USACBOSA\bin\USACBOSA.pdb
+F:\FEB SACCO\2017\Easysacco\USACBOSA\bin\AjaxControlToolkit.dll
+F:\FEB SACCO\2017\Easysacco\USACBOSA\bin\log4net.dll
+F:\FEB SACCO\2017\Easysacco\USACBOSA\obj\Debug\USACBOSA.csprojResolveAssemblyReference.cache
+F:\FEB SACCO\2017\Easysacco\USACBOSA\obj\Debug\Interop.CrystalAnalysisCommLayerLib.dll
+F:\FEB SACCO\2017\Easysacco\USACBOSA\obj\Debug\Interop.CrystalEnterpriseLib.dll
+F:\FEB SACCO\2017\Easysacco\USACBOSA\obj\Debug\Interop.CrystalFileRepositoryLib.dll
+F:\FEB SACCO\2017\Easysacco\USACBOSA\obj\Debug\Interop.CrystalInfoStoreLib.dll
+F:\FEB SACCO\2017\Easysacco\USACBOSA\obj\Debug\Interop.CrystalPluginMgrLib.dll
+F:\FEB SACCO\2017\Easysacco\USACBOSA\obj\Debug\Interop.CrystalReportsCommonObjectModelLib.dll
+F:\FEB SACCO\2017\Easysacco\USACBOSA\obj\Debug\Interop.CrystalReportsControllersLib.dll
+F:\FEB SACCO\2017\Easysacco\USACBOSA\obj\Debug\Interop.CrystalReportsCubeDefModelLib.dll
+F:\FEB SACCO\2017\Easysacco\USACBOSA\obj\Debug\Interop.CrystalReportsDataDefModelLib.dll
+F:\FEB SACCO\2017\Easysacco\USACBOSA\obj\Debug\Interop.CrystalReportsReportDefModelLib.dll
+F:\FEB SACCO\2017\Easysacco\USACBOSA\obj\Debug\Interop.CrystalReportViewerWebReportSourceLib.dll
+F:\FEB SACCO\2017\Easysacco\USACBOSA\obj\Debug\Interop.CrystalServerPluginLib.dll
+F:\FEB SACCO\2017\Easysacco\USACBOSA\obj\Debug\Interop.PrintUIObjLib.dll
+F:\FEB SACCO\2017\Easysacco\USACBOSA\obj\Debug\Interop.RepositoryExplorerLib.dll
+F:\FEB SACCO\2017\Easysacco\USACBOSA\obj\Debug\USACBOSA.csproj.ResolveComReference.cache
+F:\FEB SACCO\2017\Easysacco\USACBOSA\obj\Debug\USACBOSA.dll
+F:\FEB SACCO\2017\Easysacco\USACBOSA\obj\Debug\USACBOSA.pdb
+E:\amtech\Easysacco\USACBOSA\bin\USACBOSA.dll
+E:\amtech\Easysacco\USACBOSA\bin\USACBOSA.pdb
+E:\amtech\Easysacco\USACBOSA\bin\Neodynamic.SDK.WebClientPrint.dll
+E:\amtech\Easysacco\USACBOSA\bin\Neodynamic.SDK.WebClientPrint.xml
+E:\amtech\Easysacco\USACBOSA\obj\Debug\Interop.CrystalAnalysisCommLayerLib.dll
+E:\amtech\Easysacco\USACBOSA\obj\Debug\Interop.CrystalEnterpriseLib.dll
+E:\amtech\Easysacco\USACBOSA\obj\Debug\Interop.CrystalFileRepositoryLib.dll
+E:\amtech\Easysacco\USACBOSA\obj\Debug\Interop.CrystalInfoStoreLib.dll
+E:\amtech\Easysacco\USACBOSA\obj\Debug\Interop.CrystalPluginMgrLib.dll
+E:\amtech\Easysacco\USACBOSA\obj\Debug\Interop.CrystalReportsCommonObjectModelLib.dll
+E:\amtech\Easysacco\USACBOSA\obj\Debug\Interop.CrystalReportsControllersLib.dll
+E:\amtech\Easysacco\USACBOSA\obj\Debug\Interop.CrystalReportsCubeDefModelLib.dll
+E:\amtech\Easysacco\USACBOSA\obj\Debug\Interop.CrystalReportsDataDefModelLib.dll
+E:\amtech\Easysacco\USACBOSA\obj\Debug\Interop.CrystalReportsReportDefModelLib.dll
+E:\amtech\Easysacco\USACBOSA\obj\Debug\Interop.CrystalReportViewerWebReportSourceLib.dll
+E:\amtech\Easysacco\USACBOSA\obj\Debug\Interop.CrystalServerPluginLib.dll
+E:\amtech\Easysacco\USACBOSA\obj\Debug\Interop.PrintUIObjLib.dll
+E:\amtech\Easysacco\USACBOSA\obj\Debug\Interop.RepositoryExplorerLib.dll
+E:\amtech\Easysacco\USACBOSA\obj\Debug\USACBOSA.csproj.ResolveComReference.cache
+E:\amtech\Easysacco\USACBOSA\obj\Debug\USACBOSA.dll
+E:\amtech\Easysacco\USACBOSA\obj\Debug\USACBOSA.pdb
+F:\FEPSACCO-2018\Easysacco\USACBOSA\bin\USACBOSA.dll
+F:\FEPSACCO-2018\Easysacco\USACBOSA\bin\USACBOSA.pdb
+F:\FEPSACCO-2018\Easysacco\USACBOSA\bin\AjaxControlToolkit.dll
+F:\FEPSACCO-2018\Easysacco\USACBOSA\bin\log4net.dll
+F:\FEPSACCO-2018\Easysacco\USACBOSA\obj\Debug\Interop.CrystalAnalysisCommLayerLib.dll
+F:\FEPSACCO-2018\Easysacco\USACBOSA\obj\Debug\Interop.CrystalEnterpriseLib.dll
+F:\FEPSACCO-2018\Easysacco\USACBOSA\obj\Debug\Interop.CrystalFileRepositoryLib.dll
+F:\FEPSACCO-2018\Easysacco\USACBOSA\obj\Debug\Interop.CrystalInfoStoreLib.dll
+F:\FEPSACCO-2018\Easysacco\USACBOSA\obj\Debug\Interop.CrystalPluginMgrLib.dll
+F:\FEPSACCO-2018\Easysacco\USACBOSA\obj\Debug\Interop.CrystalReportsCommonObjectModelLib.dll
+F:\FEPSACCO-2018\Easysacco\USACBOSA\obj\Debug\Interop.CrystalReportsControllersLib.dll
+F:\FEPSACCO-2018\Easysacco\USACBOSA\obj\Debug\Interop.CrystalReportsCubeDefModelLib.dll
+F:\FEPSACCO-2018\Easysacco\USACBOSA\obj\Debug\Interop.CrystalReportsDataDefModelLib.dll
+F:\FEPSACCO-2018\Easysacco\USACBOSA\obj\Debug\Interop.CrystalReportsReportDefModelLib.dll
+F:\FEPSACCO-2018\Easysacco\USACBOSA\obj\Debug\Interop.CrystalReportViewerWebReportSourceLib.dll
+F:\FEPSACCO-2018\Easysacco\USACBOSA\obj\Debug\Interop.CrystalServerPluginLib.dll
+F:\FEPSACCO-2018\Easysacco\USACBOSA\obj\Debug\Interop.PrintUIObjLib.dll
+F:\FEPSACCO-2018\Easysacco\USACBOSA\obj\Debug\Interop.RepositoryExplorerLib.dll
+F:\FEPSACCO-2018\Easysacco\USACBOSA\obj\Debug\USACBOSA.csproj.ResolveComReference.cache
+F:\FEPSACCO-2018\Easysacco\USACBOSA\obj\Debug\USACBOSA.dll
+F:\FEPSACCO-2018\Easysacco\USACBOSA\obj\Debug\USACBOSA.pdb
+F:\FEPSACCO-2019\FEPSACCO-2018\Easysacco\USACBOSA\bin\USACBOSA.dll
+F:\FEPSACCO-2019\FEPSACCO-2018\Easysacco\USACBOSA\bin\USACBOSA.pdb
+F:\FEPSACCO-2019\FEPSACCO-2018\Easysacco\USACBOSA\bin\AjaxControlToolkit.dll
+F:\FEPSACCO-2019\FEPSACCO-2018\Easysacco\USACBOSA\bin\log4net.dll
+F:\FEPSACCO-2019\FEPSACCO-2018\Easysacco\USACBOSA\obj\Debug\Interop.CrystalAnalysisCommLayerLib.dll
+F:\FEPSACCO-2019\FEPSACCO-2018\Easysacco\USACBOSA\obj\Debug\Interop.CrystalEnterpriseLib.dll
+F:\FEPSACCO-2019\FEPSACCO-2018\Easysacco\USACBOSA\obj\Debug\Interop.CrystalFileRepositoryLib.dll
+F:\FEPSACCO-2019\FEPSACCO-2018\Easysacco\USACBOSA\obj\Debug\Interop.CrystalInfoStoreLib.dll
+F:\FEPSACCO-2019\FEPSACCO-2018\Easysacco\USACBOSA\obj\Debug\Interop.CrystalPluginMgrLib.dll
+F:\FEPSACCO-2019\FEPSACCO-2018\Easysacco\USACBOSA\obj\Debug\Interop.CrystalReportsCommonObjectModelLib.dll
+F:\FEPSACCO-2019\FEPSACCO-2018\Easysacco\USACBOSA\obj\Debug\Interop.CrystalReportsControllersLib.dll
+F:\FEPSACCO-2019\FEPSACCO-2018\Easysacco\USACBOSA\obj\Debug\Interop.CrystalReportsCubeDefModelLib.dll
+F:\FEPSACCO-2019\FEPSACCO-2018\Easysacco\USACBOSA\obj\Debug\Interop.CrystalReportsDataDefModelLib.dll
+F:\FEPSACCO-2019\FEPSACCO-2018\Easysacco\USACBOSA\obj\Debug\Interop.CrystalReportsReportDefModelLib.dll
+F:\FEPSACCO-2019\FEPSACCO-2018\Easysacco\USACBOSA\obj\Debug\Interop.CrystalReportViewerWebReportSourceLib.dll
+F:\FEPSACCO-2019\FEPSACCO-2018\Easysacco\USACBOSA\obj\Debug\Interop.CrystalServerPluginLib.dll
+F:\FEPSACCO-2019\FEPSACCO-2018\Easysacco\USACBOSA\obj\Debug\Interop.PrintUIObjLib.dll
+F:\FEPSACCO-2019\FEPSACCO-2018\Easysacco\USACBOSA\obj\Debug\Interop.RepositoryExplorerLib.dll
+F:\FEPSACCO-2019\FEPSACCO-2018\Easysacco\USACBOSA\obj\Debug\USACBOSA.csproj.ResolveComReference.cache
+F:\FEPSACCO-2019\FEPSACCO-2018\Easysacco\USACBOSA\obj\Debug\USACBOSA.dll
+F:\FEPSACCO-2019\FEPSACCO-2018\Easysacco\USACBOSA\obj\Debug\USACBOSA.pdb
+E:\FEPSACCO-2019\FEPSACCO-2018\Easysacco\USACBOSA\bin\USACBOSA.dll
+E:\FEPSACCO-2019\FEPSACCO-2018\Easysacco\USACBOSA\bin\USACBOSA.pdb
+E:\FEPSACCO-2019\FEPSACCO-2018\Easysacco\USACBOSA\obj\Debug\USACBOSA.csprojResolveAssemblyReference.cache
+E:\FEPSACCO-2019\FEPSACCO-2018\Easysacco\USACBOSA\obj\Debug\Interop.CrystalAnalysisCommLayerLib.dll
+E:\FEPSACCO-2019\FEPSACCO-2018\Easysacco\USACBOSA\obj\Debug\Interop.CrystalEnterpriseLib.dll
+E:\FEPSACCO-2019\FEPSACCO-2018\Easysacco\USACBOSA\obj\Debug\Interop.CrystalFileRepositoryLib.dll
+E:\FEPSACCO-2019\FEPSACCO-2018\Easysacco\USACBOSA\obj\Debug\Interop.CrystalInfoStoreLib.dll
+E:\FEPSACCO-2019\FEPSACCO-2018\Easysacco\USACBOSA\obj\Debug\Interop.CrystalPluginMgrLib.dll
+E:\FEPSACCO-2019\FEPSACCO-2018\Easysacco\USACBOSA\obj\Debug\Interop.CrystalReportsCommonObjectModelLib.dll
+E:\FEPSACCO-2019\FEPSACCO-2018\Easysacco\USACBOSA\obj\Debug\Interop.CrystalReportsControllersLib.dll
+E:\FEPSACCO-2019\FEPSACCO-2018\Easysacco\USACBOSA\obj\Debug\Interop.CrystalReportsCubeDefModelLib.dll
+E:\FEPSACCO-2019\FEPSACCO-2018\Easysacco\USACBOSA\obj\Debug\Interop.CrystalReportsDataDefModelLib.dll
+E:\FEPSACCO-2019\FEPSACCO-2018\Easysacco\USACBOSA\obj\Debug\Interop.CrystalReportsReportDefModelLib.dll
+E:\FEPSACCO-2019\FEPSACCO-2018\Easysacco\USACBOSA\obj\Debug\Interop.CrystalReportViewerWebReportSourceLib.dll
+E:\FEPSACCO-2019\FEPSACCO-2018\Easysacco\USACBOSA\obj\Debug\Interop.CrystalServerPluginLib.dll
+E:\FEPSACCO-2019\FEPSACCO-2018\Easysacco\USACBOSA\obj\Debug\Interop.PrintUIObjLib.dll
+E:\FEPSACCO-2019\FEPSACCO-2018\Easysacco\USACBOSA\obj\Debug\Interop.RepositoryExplorerLib.dll
+E:\FEPSACCO-2019\FEPSACCO-2018\Easysacco\USACBOSA\obj\Debug\USACBOSA.csproj.ResolveComReference.cache
+E:\FEPSACCO-2019\FEPSACCO-2018\Easysacco\USACBOSA\obj\Debug\USACBOSA.dll
+E:\FEPSACCO-2019\FEPSACCO-2018\Easysacco\USACBOSA\obj\Debug\USACBOSA.pdb
+E:\NEW EASYSACCO-2021\FEPSACCO-2019\FEPSACCO-2018\Easysacco\USACBOSA\bin\USACBOSA.dll
+E:\NEW EASYSACCO-2021\FEPSACCO-2019\FEPSACCO-2018\Easysacco\USACBOSA\bin\USACBOSA.pdb
+E:\NEW EASYSACCO-2021\FEPSACCO-2019\FEPSACCO-2018\Easysacco\USACBOSA\obj\Debug\Interop.CrystalAnalysisCommLayerLib.dll
+E:\NEW EASYSACCO-2021\FEPSACCO-2019\FEPSACCO-2018\Easysacco\USACBOSA\obj\Debug\Interop.CrystalEnterpriseLib.dll
+E:\NEW EASYSACCO-2021\FEPSACCO-2019\FEPSACCO-2018\Easysacco\USACBOSA\obj\Debug\Interop.CrystalFileRepositoryLib.dll
+E:\NEW EASYSACCO-2021\FEPSACCO-2019\FEPSACCO-2018\Easysacco\USACBOSA\obj\Debug\Interop.CrystalInfoStoreLib.dll
+E:\NEW EASYSACCO-2021\FEPSACCO-2019\FEPSACCO-2018\Easysacco\USACBOSA\obj\Debug\Interop.CrystalPluginMgrLib.dll
+E:\NEW EASYSACCO-2021\FEPSACCO-2019\FEPSACCO-2018\Easysacco\USACBOSA\obj\Debug\Interop.CrystalReportsCommonObjectModelLib.dll
+E:\NEW EASYSACCO-2021\FEPSACCO-2019\FEPSACCO-2018\Easysacco\USACBOSA\obj\Debug\Interop.CrystalReportsControllersLib.dll
+E:\NEW EASYSACCO-2021\FEPSACCO-2019\FEPSACCO-2018\Easysacco\USACBOSA\obj\Debug\Interop.CrystalReportsCubeDefModelLib.dll
+E:\NEW EASYSACCO-2021\FEPSACCO-2019\FEPSACCO-2018\Easysacco\USACBOSA\obj\Debug\Interop.CrystalReportsDataDefModelLib.dll
+E:\NEW EASYSACCO-2021\FEPSACCO-2019\FEPSACCO-2018\Easysacco\USACBOSA\obj\Debug\Interop.CrystalReportsReportDefModelLib.dll
+E:\NEW EASYSACCO-2021\FEPSACCO-2019\FEPSACCO-2018\Easysacco\USACBOSA\obj\Debug\Interop.CrystalReportViewerWebReportSourceLib.dll
+E:\NEW EASYSACCO-2021\FEPSACCO-2019\FEPSACCO-2018\Easysacco\USACBOSA\obj\Debug\Interop.CrystalServerPluginLib.dll
+E:\NEW EASYSACCO-2021\FEPSACCO-2019\FEPSACCO-2018\Easysacco\USACBOSA\obj\Debug\Interop.PrintUIObjLib.dll
+E:\NEW EASYSACCO-2021\FEPSACCO-2019\FEPSACCO-2018\Easysacco\USACBOSA\obj\Debug\Interop.RepositoryExplorerLib.dll
+E:\NEW EASYSACCO-2021\FEPSACCO-2019\FEPSACCO-2018\Easysacco\USACBOSA\obj\Debug\USACBOSA.csproj.ResolveComReference.cache
+E:\NEW EASYSACCO-2021\FEPSACCO-2019\FEPSACCO-2018\Easysacco\USACBOSA\obj\Debug\USACBOSA.dll
+E:\NEW EASYSACCO-2021\FEPSACCO-2019\FEPSACCO-2018\Easysacco\USACBOSA\obj\Debug\USACBOSA.pdb
+E:\Newtech\Source code\C#\Amtech\Easysacco\USACBOSA\bin\USACBOSA.dll.config
+E:\Newtech\Source code\C#\Amtech\Easysacco\USACBOSA\bin\USACBOSA.dll
+E:\Newtech\Source code\C#\Amtech\Easysacco\USACBOSA\bin\USACBOSA.pdb
+E:\Newtech\Source code\C#\Amtech\Easysacco\USACBOSA\bin\CrystalDecisions.CrystalReports.Design.dll
+E:\Newtech\Source code\C#\Amtech\Easysacco\USACBOSA\bin\crystaldecisions.crystalreports.engine.dll
+E:\Newtech\Source code\C#\Amtech\Easysacco\USACBOSA\bin\CrystalDecisions.Data.AdoDotNetInterop.dll
+E:\Newtech\Source code\C#\Amtech\Easysacco\USACBOSA\bin\crystaldecisions.reportsource.dll
+E:\Newtech\Source code\C#\Amtech\Easysacco\USACBOSA\bin\crystaldecisions.shared.dll
+E:\Newtech\Source code\C#\Amtech\Easysacco\USACBOSA\bin\crystaldecisions.web.dll
+E:\Newtech\Source code\C#\Amtech\Easysacco\USACBOSA\bin\Microsoft.ReportViewer.WebForms.dll
+E:\Newtech\Source code\C#\Amtech\Easysacco\USACBOSA\bin\CrystalDecisions.ReportAppServer.DataDefModel.dll
+E:\Newtech\Source code\C#\Amtech\Easysacco\USACBOSA\bin\CrystalDecisions.ReportAppServer.ClientDoc.dll
+E:\Newtech\Source code\C#\Amtech\Easysacco\USACBOSA\bin\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+E:\Newtech\Source code\C#\Amtech\Easysacco\USACBOSA\bin\CrystalDecisions.ReportAppServer.Controllers.dll
+E:\Newtech\Source code\C#\Amtech\Easysacco\USACBOSA\bin\CrystalDecisions.ReportAppServer.CommLayer.dll
+E:\Newtech\Source code\C#\Amtech\Easysacco\USACBOSA\bin\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+E:\Newtech\Source code\C#\Amtech\Easysacco\USACBOSA\bin\CrystalDecisions.ReportAppServer.Prompting.dll
+E:\Newtech\Source code\C#\Amtech\Easysacco\USACBOSA\bin\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+E:\Newtech\Source code\C#\Amtech\Easysacco\USACBOSA\bin\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+E:\Newtech\Source code\C#\Amtech\Easysacco\USACBOSA\bin\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+E:\Newtech\Source code\C#\Amtech\Easysacco\USACBOSA\bin\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+E:\Newtech\Source code\C#\Amtech\Easysacco\USACBOSA\bin\CrystalDecisions.ReportAppServer.CommonControls.dll
+E:\Newtech\Source code\C#\Amtech\Easysacco\USACBOSA\bin\stdole.dll
+E:\Newtech\Source code\C#\Amtech\Easysacco\USACBOSA\bin\Microsoft.ReportViewer.WebForms.xml
+E:\Newtech\Source code\C#\Amtech\Easysacco\USACBOSA\obj\Debug\Interop.CrystalAnalysisCommLayerLib.dll
+E:\Newtech\Source code\C#\Amtech\Easysacco\USACBOSA\obj\Debug\Interop.CrystalReportsControllersLib.dll
+E:\Newtech\Source code\C#\Amtech\Easysacco\USACBOSA\obj\Debug\Interop.CrystalReportsCubeDefModelLib.dll
+E:\Newtech\Source code\C#\Amtech\Easysacco\USACBOSA\obj\Debug\Interop.CrystalReportsDataDefModelLib.dll
+E:\Newtech\Source code\C#\Amtech\Easysacco\USACBOSA\obj\Debug\Interop.CrystalReportsReportDefModelLib.dll
+E:\Newtech\Source code\C#\Amtech\Easysacco\USACBOSA\obj\Debug\Interop.PrintUIObjLib.dll
+E:\Newtech\Source code\C#\Amtech\Easysacco\USACBOSA\obj\Debug\USACBOSA.csproj.ResolveComReference.cache
+E:\Newtech\Source code\C#\Amtech\Easysacco\USACBOSA\obj\Debug\USACBOSA.csproj.CoreCompileInputs.cache
+E:\Newtech\Source code\C#\Amtech\Easysacco\USACBOSA\obj\Debug\USACBOSA.csproj.CopyComplete
+E:\Newtech\Source code\C#\Amtech\Easysacco\USACBOSA\obj\Debug\USACBOSA.dll
+E:\Newtech\Source code\C#\Amtech\Easysacco\USACBOSA\obj\Debug\USACBOSA.pdb
+E:\Newtech\Source code\C#\Amtech\Easysacco\USACBOSA\obj\Debug\USACBOSA.csproj.AssemblyReference.cache

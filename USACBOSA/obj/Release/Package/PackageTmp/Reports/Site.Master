@@ -1,0 +1,58 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="USACBOSA.Reports.SiteMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head id="Head1" runat="server">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
+    <title>Easysacco Management System</title>
+    <link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />
+    <a href="Site.Master">Site.Master</a>
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="Form1" runat="server">
+    <div class="page">
+        <div class="header">
+            <div class="clear hideSkiplink">
+               
+                <asp:Menu ID="NavigationMenu" runat="server" CssClass="menu" 
+                    EnableViewState="false" IncludeStyleBlock="false" Orientation="Horizontal" 
+                    onmenuitemclick="NavigationMenu_MenuItemClick">
+                </asp:Menu>
+                
+            </div>
+        </div>
+         <div class="main" 
+            
+            style="overflow: scroll;background-color: #CCFFFF; width: 1062px; height: 664px;">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+                 =<button onclick="goBack(-1)">Go Back</button>
+            </asp:ContentPlaceHolder>
+       </div>
+       
+   </div>
+   </form>
+    <div class="footer">
+        
+        <asp:Label ID="Label3" runat="server" style="color: #000000" 
+            Text="You are logged in as:"></asp:Label>
+                    <asp:Label ID="Label1" runat="server" 
+                        
+            
+            style="font-family: Arial, Helvetica, sans-serif; color: #333300; font-weight: 700; font-style: italic;" 
+            Text="Label"></asp:Label>
+                    <br />
+        
+        <asp:Label ID="Label4" runat="server" style="color: #000000" 
+            Text="Branch:"></asp:Label>
+                    <asp:Label ID="Label2" runat="server" 
+                        
+            
+            style="font-family: Arial, Helvetica, sans-serif; color: #FFFF00; font-style: italic; font-weight: 700;" 
+            Text="Label"></asp:Label>
+        
+    </div>
+    
+</body>
+</html>

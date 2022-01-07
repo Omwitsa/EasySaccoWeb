@@ -1,0 +1,33 @@
+﻿ .VeryWeekStrength
+{
+background: Red;
+color:White;
+}
+.WeakStrength
+{
+background:orange;
+color:White;
+}
+.AverageStrength
+{
+background: Gray ;
+color:White;
+}
+.GoodStrength
+{
+background: blue;
+color:White;
+}
+.ExcellentStrength
+{
+background: Green;
+color:White;
+}
+.BarBorderStyle
+{
+border-style:solid ;
+border-color:Gray;
+border-width: 1px;
+width: 150px;
+padding: 2px;
+}

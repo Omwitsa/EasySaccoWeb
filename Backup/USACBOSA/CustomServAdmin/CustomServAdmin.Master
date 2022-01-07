@@ -1,0 +1,272 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="CustomServAdmin.master.cs" Inherits="USACBOSA.CustomServAdmin.CustomServAdmin" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="server" runat="server">
+    <title></title>
+    <link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+    .UpperCaseFirstLetter
+        {
+            text-transform:capitalize;
+            text-decoration: underline;
+        }
+        .menu
+        {
+            font-weight: 400;
+            font-family: "Segoe UI";
+        }
+        .menu
+        {
+            font-weight: 400;
+            font-family: "Segoe UI";
+        }
+        .menu
+        {
+            letter-spacing: 1pt;
+            font-family: "Segoe UI";
+        }
+        .menu
+        {
+            font-weight: 400;
+            font-family: "Segoe UI";
+        }
+        .menu
+        {
+            font-weight: 600;
+            font-family: "Times New Roman";
+        }
+        .menu
+        {
+            font-size: medium;
+            font-weight: 400;
+            font-family: "Times New Roman";
+        }
+        .menu
+        {
+            font-size: medium;
+            font-weight: 400;
+            font-family: "Times New Roman";
+        }
+        .menu
+        {
+            font-size: medium;
+            font-weight: 400;
+            font-family: "Times New Roman";
+        }
+        .menu
+        {
+            font-weight: 400;
+            font-family: "Segoe UI";
+        }
+        .menu
+        {
+            font-size: small;
+            font-weight: 400;
+            font-family: "Segoe UI";
+        }
+        .menu
+        {
+            font-size: medium ;
+            font-weight: 400;
+            font-family: Segoe Marker ;
+        }
+    </style>
+</head>
+<body>
+    <form id="Form1" runat="server">
+    <div class="page">
+        <div class="header" 
+            style="background-color: #04B4AE; top: 0px; left: 0px; height: 144px;">
+            <div style="width: 292px; height: 154px; position: relative; top: 0px; left: 0px;">
+                <asp:Image ID="Image1" runat="server" Height="136px" 
+                    ImageUrl="~/images/sacco_logo.JPG" Width="498px" 
+                    style="margin-top: 0px; margin-left: 0px;" />
+            </div>
+            <div class="clear hideSkiplink" 
+                
+                style="position: relative; background-color: #04B4AE; background-image: url('/images/footer.jpg'); top: -13px; left: 0px; height: 37px;">
+                <asp:Menu ID="NavigationMenu" runat="server" CssClass="menu" 
+                    EnableViewState="false" IncludeStyleBlock="false" Orientation="Horizontal" 
+                    Font-Size="8pt" onmenuitemclick="NavigationMenu_MenuItemClick2">
+                    <Items>
+                        <asp:MenuItem Text="Records" Value="Records">
+                            <asp:MenuItem NavigateUrl="~/CustomServAdmin/MembershipRegistration.aspx" 
+                                Text="Membership Registration" Value="Membership Registration">
+                            </asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/CustomServAdmin/Beneficiary.aspx" Text="Beneficiaries" 
+                                Value="Beneficiaries"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/CustomServAdmin/CompanySetup.aspx" 
+                                Text="Group Registration" Value="Group Registration"></asp:MenuItem>
+                        </asp:MenuItem>
+                        <asp:MenuItem Text="Transactions" Value="Member Transactions">
+                            <asp:MenuItem Text="Receipt Posting" Value="Receipt Posting" 
+                                NavigateUrl="~/CustomServAdmin/MPA3.aspx">
+                            </asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/CustomServAdmin/MPA_Paymentposting.aspx" 
+                                Text="Payment Posting MPA" Value="Payment Posting MPA"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/CustomServAdmin/ReprintReceipt.aspx" 
+                                Text="Reprint Member Receipt" Value="Reprint Member Receipt"></asp:MenuItem>
+                            <asp:MenuItem Text="Transfers &amp; Offsettings" 
+                                Value="Transfers &amp; Offsettings">
+                                <asp:MenuItem NavigateUrl="~/CustomServAdmin/sharetransfers.aspx" 
+                                    Text="Share Transfers" Value="Share Transfers"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/CustomServAdmin/SharetoLoanOffset.aspx" 
+                                    Text="Share to Loan Offsetings" Value="Share to Loan Offsetings">
+                                </asp:MenuItem>
+                            </asp:MenuItem>
+                        </asp:MenuItem>
+                        <asp:MenuItem Text="Enquiries" Value="Enquiries">
+                            <asp:MenuItem NavigateUrl="~/CustomServAdmin/LoansInquiry.aspx" 
+                                Text="Loans Inquiry" Value="Loans Inquiry"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/CustomServAdmin/SharesInquiry.aspx" 
+                                Text="Shares Inquiry" Value="Shares Inquiry"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/CustomServAdmin/Variation.aspx" 
+                                Text="Share Variations" Value="Share Variations"></asp:MenuItem>
+                        </asp:MenuItem>
+                        <asp:MenuItem Text="Reports" Value="Reports">
+                            <asp:MenuItem Text="Members" Value="Members" 
+                                NavigateUrl="~/Reports/ReportsViewer.aspx?reportType=members">
+                            </asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Reports/ReportsViewer.aspx?reportType=Registered" 
+                                Text="Periodic Registered members" 
+                                Value="Periodic Registered members"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Reports/ReportsViewer.aspx?reportType=withdrawal" 
+                                Text="Members Withdrawal" Value="Members Withdrawal"></asp:MenuItem>
+                            <asp:MenuItem Text="Loans" Value="Loans">
+                                <asp:MenuItem NavigateUrl="~/Reports/ReportsViewer.aspx?reportType=AppliedLoans" Text="Applied" 
+                                    Value="Applied"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/Reports/ReportsViewer.aspx?reportType=Loansissued" Text="Loans Issued Overall" 
+                                    Value="Issued"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/Reports/ReportsViewer.aspx?reportType=LoansIssued-Detailedregion" 
+                                    Text="Loans Issued Per Region" Value="Loans Issued Per Region">
+                                </asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/Reports/ReportsViewer.aspx?reportType=LoanBalances" Text="Balances" 
+                                    Value="Balances"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/Reports/ReportsViewer.aspx?reportType=LoansDue" Text="LoansDue" 
+                                    Value="LoansDue"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/Reports/ReportsViewer.aspx?reportType=Expecteddues"
+                                    Text="Expected Loan Repayments" Value="Expected Loan Repayments">
+                                </asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/Reports/ReportsViewer.aspx?reportType=CollectionSheett3" 
+                                    Text="Periodic Loan Arears" Value="Periodic Loan Arears"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/Reports/ReportsViewer.aspx?reportType=Loansoverpayment" 
+                                    Text="Loans Overpayment" Value="Loans Overpayment"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/Reports/ReportsViewer.aspx?reportType=RejectedLoans" Text="Rejected Loans" 
+                                    Value="Rejected Loans"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/Reports/ReportsViewer.aspx?reportType=LoanRecovery" 
+                                    Text="Loan Recovery" Value="Loan Recovery"></asp:MenuItem>
+                                <asp:MenuItem Text="Repayments" Value="Repayments">
+                                    <asp:MenuItem NavigateUrl="~/Reports/ReportsViewer.aspx?reportType=SummaryRepayments" 
+                                        Text="Per Product" Value="Per Product"></asp:MenuItem>
+                                    <asp:MenuItem NavigateUrl="~/Reports/ReportsViewer.aspx?reportType=periodicLoan" Text="PerLoan" 
+                                        Value="PerLoan"></asp:MenuItem>
+                                </asp:MenuItem>
+                                <asp:MenuItem  NavigateUrl="~/Reports/ReportsViewer.aspx?reportType=ShareholdersListing" 
+                                    Text="Balancesper member" Value="Balancesper member"></asp:MenuItem>
+                                <asp:MenuItem  NavigateUrl="~/Reports/ReportsViewer.aspx?reportType=Loanbalanceperloan" 
+                                    Text="Balancesper Loan" Value="Balancesper Loan"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/FinanceAdmin/UnpaidLoans.aspx" Text="Unpaid Loans" 
+                                    Value="Unpaid Loans"></asp:MenuItem>
+                            </asp:MenuItem>
+                            <asp:MenuItem Text="Shares" Value="Shares">
+                                <asp:MenuItem NavigateUrl="~/FinanceAdmin/ShareState.aspx" 
+                                    Text="Sharestatement" Value="Sharestatement"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/Reports/ReportsViewer.aspx?reportType=piriodicshares" Text="Shares at" 
+                                    Value="Shares at"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/Reports/ReportsViewer.aspx?reportType=ShareholdersListing" Text="Sharessummary" 
+                                    Value="Sharessummary"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/Reports/ReportsViewer.aspx?reportType=SharesVariations" Text="ShareVariation" 
+                                    Value="ShareVariation"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/Reports/ReportsViewer.aspx?reportType=PeriodicShares" Text="PeriodicShares" 
+                                    Value="PeriodicShares"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/Reports/ReportsViewer.aspx?reportType=Savingsperiod" 
+                                    Text="Periodic Savings" Value="Periodic Savings"></asp:MenuItem>
+                            </asp:MenuItem>
+                            <asp:MenuItem Text="Shares &amp; Loan summary" 
+                                Value="Shares &amp; Loan summary">
+                                <asp:MenuItem NavigateUrl="~/Reports/ReportsViewer.aspx?reportType=grouped" Text="Grouped" 
+                                    Value="Grouped"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/Reports/ReportsViewer.aspx?reportType=ungrouped" Text="UnGrouped" 
+                                    Value="UnGrouped"></asp:MenuItem>
+                            </asp:MenuItem>
+                            <asp:MenuItem Text="Defaulters" Value="Defaulters">
+                                <asp:MenuItem NavigateUrl="~/Reports/ReportsViewer.aspx?reportType=Defaulters" Text="General" 
+                                    Value="General"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/Reports/ReportsViewer.aspx?reportType=Defaultersregion" Text="Region" 
+                                    Value="Region"></asp:MenuItem>
+                            </asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Reports/ReportsViewer.aspx?reportType=aginganalysis" Text="Aging Analysis" 
+                                Value="Aging Analysis"></asp:MenuItem>
+                            <asp:MenuItem  NavigateUrl="~/Reports/ReportsViewer.aspx?reportType=aginganalysispergraph" Text="Aging Analysis Per Graph" Value="Aging Analysis Per Graph">
+                            </asp:MenuItem>
+                            <asp:MenuItem  NavigateUrl="~/Reports/ReportsViewer.aspx?reportType=aginganalysisperregion" Text="Aging Analysis Per Region" 
+                                Value="Aging Analysis Per Region"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Reports/ReportsViewer.aspx?reportType=RiskPortfolioanalysis" 
+                                Text="Portfolio At Risk Analysis" Value="Risk Portfolio Analysis">
+                            </asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Reports/ReportsViewer.aspx?reportType=PAR" 
+                                Text="Portfolio At Risk Summary" Value="Portfolio At Risk Summary"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Reports/ReportsViewer.aspx?reportType=PRODUCTOLB" 
+                                Text="Loan Product Analysis" Value="Loan Product Analysis"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Reports/ReportsViewer.aspx?reportType=LoanTypesPAR" Text="Loan Types Performance" 
+                                Value="Loan Types Performance"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Reports/ReportsViewer.aspx?reportType=DefaultersCollection" 
+                                Text="Loan Collection Summary Analysis" 
+                                Value="Loan Collection Summary Analysis"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Reports/ReportsViewer.aspx?reportType=COLLECTIONPERREGION" 
+                                Text="Collection Per Region" Value="Collection Per Region"></asp:MenuItem>
+                            <asp:MenuItem Text="Guarantors" Value="Guarantors">
+                                <asp:MenuItem NavigateUrl="~/Reports/ReportsViewer.aspx?reportType=newGuarantors" Text="My Guarantors" 
+                                    Value="My Guarantors"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/Reports/ReportsViewer.aspx?reportType=individualsGuarantors" 
+                                    Text="Guaranteed Members" Value="Guaranteed Members"></asp:MenuItem>
+                            </asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Reports/ReportsViewer.aspx?reportType=Dividend List" Text="Dividents" 
+                                Value="Dividents"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Reports/ReportsViewer.aspx?reportType=ChequesReceived" 
+                                Text="Cheques Received" Value="Cheques Received"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Reports/ReportsViewer.aspx?reportType=AuditTrail_Time" Text="Audit Trail" 
+                                Value="Audit Trail"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Reports/ReportsViewer.aspx?reportType=CollectionSheett2" Text="Loan Arears" 
+                                Value="Loan Arears"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Reports/ReportsViewer.aspx?reportType=Budgets" Text="Budgetting" 
+                                Value="Budgetting"></asp:MenuItem>
+                        </asp:MenuItem>
+                        <asp:MenuItem Text="Signout" Value="Signout" NavigateUrl="~/Logout.aspx">
+                        </asp:MenuItem>
+                    </Items>
+                </asp:Menu>
+
+            </div>
+            <div style="position: relative; top: -129px; left: 508px; width: 445px; height: 68px;">
+                <asp:Label ID="Label2" runat="server" Font-Bold="True" ForeColor="White" 
+                    style="color: White" CssClass="UpperCaseFirstLetter"></asp:Label>
+                <br />
+                <asp:Label ID="Label4" runat="server" Font-Bold="True" ForeColor="White" 
+                    style="color: White" CssClass="UpperCaseFirstLetter"></asp:Label>
+                <br />
+                <br />
+                <asp:LinkButton ID="LinkButton1" runat="server" onclick="LinkButton1_Click1" 
+                    Width="129px" Font-Bold="True" ForeColor="White" >Change Pasword</asp:LinkButton>
+                <br />
+            </div>
+        </div>
+      <div class="main" 
+            style="overflow: scroll;background-color: #CCFFFF; width: 1063px; height: 499px;">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+                
+            </asp:ContentPlaceHolder>
+        </div>
+    </div>
+    <div class="footer"
+        
+        style="background-color: #FFFFCC; width: 966px; background-image: url('/images/footer.jpg'); height: 19px; color: #008000; font-weight: bold;">
+        Copyright <em>&copy;</em> <%: DateTime.Now.Year %>|<em> Easy Sacco | </em>P<em>owered 
+        by Amtech Technologies Limited.</em></div>
+    </form>
+</body>
+</html>
+
