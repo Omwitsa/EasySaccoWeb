@@ -1199,18 +1199,44 @@ namespace USACBOSA.FinanceAdmin
             catch (Exception ex)
             { WARSOFT.WARMsgBox.Show(ex.Message); return; }
         }
-        private void saveReceipt(string Receiptno, string reff, string RefNo, string mMemberno, string Mmberno, string Receipt, DateTime TransDate, double Amount, string chequeno, string ptype)
+        private void saveReceipt(string Receiptno, string reff, string RefNo, string mMemberno, string Receipt, DateTime TransDate, double Amount, string chequeno, string ptype)
         {
             try
             {
-                string todb = "set dateformat dmy INSERT INTO ReceiptBooking (ReceiptNo,Ref,Refno,MemberNo,Companycode,Name,Transdate,Amount, Chequeno, ptype, auditid,datedeposited,draccno) VALUES ('" + Receiptno + "','" + reff + "','" + RefNo + "','" + Mmberno + "','" + Mmberno + "','" + Receipt + "','" + TransDate + "'," + Amount + ",'" + chequeno + "','" + ptype + "','" + Session["mimi"].ToString() + "','" + DateTime.Now + "','" + cboBankAC.Text + "')";
+                string query = $"SELECT COMPANYCODE FROM MEMBERS WHERE memberNo = '{mMemberno}'";
+                string groupCode = "";
+                dr2 = new WARTECHCONNECTION.cConnect().ReadDB(query);
+                if (dr2.HasRows)
+                {
+                    while (dr2.Read())
+                    {
+                        groupCode = dr2["COMPANYCODE"].ToString();
+                    }
+                }
+                dr2.Close(); dr2.Dispose(); dr2 = null;
 
+                string todb = "set dateformat dmy INSERT INTO ReceiptBooking (ReceiptNo,Ref,Refno,MemberNo,Companycode,Name,Transdate,Amount, Chequeno, ptype, auditid,datedeposited,draccno) VALUES ('" + Receiptno + "','" + reff + "','" + RefNo + "','" + mMemberno + "','" + groupCode + "','" + Receipt + "','" + TransDate + "'," + Amount + ",'" + chequeno + "','" + ptype + "','" + Session["mimi"].ToString() + "','" + DateTime.Now + "','" + cboBankAC.Text + "')";
                 new WARTECHCONNECTION.cConnect().WriteDB(todb);
-
                 string mysql = "set dateformat dmy Insert into Receiptno(Receiptno,Auditdate,auditid,memberno)values('" + Receiptno + "','" + TransDate + "','" + Session["mimi"].ToString() + "','" + mMemberno + "')";
                 new WARTECHCONNECTION.cConnect().WriteDB(mysql);
+                SaveGroupCapital(groupCode, Amount);
             }
             catch (Exception ex) { WARSOFT.WARMsgBox.Show(ex.Message); return; }
+        }
+        private void SaveGroupCapital(string groupCode, double amount)
+        {
+            string query = "SELECT Capital FROM COMPANY WHERE CompanyCode = '" + groupCode + "'";
+            dr = new WARTECHCONNECTION.cConnect().ReadDB(query);
+            if (dr.HasRows)
+            {
+                while (dr.Read())
+                {
+                    double.TryParse(dr["Capital"].ToString(), out double capital);
+                    capital += amount;
+                    new WARTECHCONNECTION.cConnect().WriteDB("UPDATE COMPANY SET Capital = '" + capital + "' WHERE CompanyCode = '" + groupCode + "'");
+                }
+            }
+            dr.Close(); dr.Dispose(); dr = null;
         }
         protected void btnSave_Click(object sender, EventArgs e)
         {
@@ -1311,7 +1337,7 @@ namespace USACBOSA.FinanceAdmin
                         DateTime TimeNow = DateTime.Now;
                         transactionNo = Convert.ToString(TimeNow);
                         transactionNo = transactionNo.Replace("/", "").Replace(" ", "").Replace(":", "").TrimStart().TrimEnd();
-                        saveReceipt(txtReceiptNo.Text, "MPA", txtSerialNo.Text.Trim(), txtMemberNo.Text, txtMemberNo.Text, TransDescription, System.DateTime.Today, Convert.ToDouble(txtDistributedAmount.Text), txtChequeNo.Text, cboPaymentMode.Text);
+                        saveReceipt(txtReceiptNo.Text, "MPA", txtSerialNo.Text.Trim(), txtMemberNo.Text, TransDescription, System.DateTime.Today, Convert.ToDouble(txtDistributedAmount.Text), txtChequeNo.Text, cboPaymentMode.Text);
 
                         if (TransType == "Contrib")
                         {

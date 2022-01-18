@@ -183,7 +183,7 @@
                 </td>
             <td class="style28">
                 <asp:TextBox ID="txtGuarNo" runat="server" Width="100px" 
-                    ontextchanged="txtGuarNo_TextChanged"></asp:TextBox>
+                    ontextchanged="txtGuarNo_TextChanged" AutoPostBack="True"></asp:TextBox>
                 <asp:Button ID="Button1" runat="server" onclick="Button1_Click" Text="F" 
                     Visible="False" />
             </td>

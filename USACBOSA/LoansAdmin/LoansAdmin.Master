@@ -111,12 +111,12 @@
                             <asp:MenuItem Text="Loans Processing" Value="Loans Processing">
                                 <asp:MenuItem NavigateUrl="~/LoansAdmin/LoanApplications.aspx" 
                                     Text="Applications" Value="Applications"></asp:MenuItem>
-                                <asp:MenuItem NavigateUrl="~/LoansAdmin/GroupApplication.aspx" 
-                                    Text="Group Applications" Value="Group Applications"></asp:MenuItem>
                                 <asp:MenuItem NavigateUrl="~/LoansAdmin/LoanGuarantors.aspx" 
                                     Text="Guarantors" Value="Guarantors"></asp:MenuItem>
                                 <asp:MenuItem NavigateUrl="~/LoansAdmin/LoanSchedule.aspx" 
                                     Text="Loan Schedule" Value="Loan Schedule"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/LoansAdmin/GroupApplication.aspx" 
+                                    Text="Group Applications" Value="Group Applications"></asp:MenuItem>
                             </asp:MenuItem>
                             <asp:MenuItem NavigateUrl="~/LoansAdmin/MPA5.aspx" Text="Receipt Posting" 
                                 Value="Receipt Posting"></asp:MenuItem>

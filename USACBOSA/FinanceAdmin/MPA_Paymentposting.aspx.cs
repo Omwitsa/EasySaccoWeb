@@ -1154,9 +1154,21 @@ namespace USACBOSA.FinanceAdmin
                         while (dr1.Read())
                         {
                             string groupCode = dr1["GroupCode"].ToString();
+                            string strRecAmount = GridView1.SelectedRow.Cells[5].Text;
+                            double.TryParse(strRecAmount, out double recAmount);
                             if (string.IsNullOrEmpty(groupCode))
                             {
-                                SaveGroupCapital(mMemberno, -LoanAmount);
+                                query = $"SELECT COMPANYCODE FROM MEMBERS WHERE memberNo = '{mMemberno}'";
+                                dr2 = new WARTECHCONNECTION.cConnect().ReadDB(query);
+                                if (dr2.HasRows)
+                                {
+                                    while (dr2.Read())
+                                    {
+                                        groupCode = dr2["COMPANYCODE"].ToString();
+                                    }
+                                }
+                                dr2.Close(); dr2.Dispose(); dr2 = null;
+                                SaveGroupCapital(groupCode, -recAmount);
                             }
                             else
                             {

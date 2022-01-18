@@ -264,6 +264,13 @@ namespace USACBOSA.LoansAdmin
         {
             try
             {
+                if (string.IsNullOrEmpty(txtLoanNo.Text))
+                {
+                    txtGuarNo.Text = "";
+                    WARSOFT.WARMsgBox.Show("Kindly, Provide loan number");
+                    txtLoanNo.Focus();
+                    return;
+                }
                 double GuarToShare = 0;
                 dr = new WARTECHCONNECTION.cConnect().ReadDB("select isnull(LoanToShareRatio,0)LoanToShareRatio,SelfGuar from SYSPARAM");
                 if (dr.HasRows)
@@ -283,12 +290,33 @@ namespace USACBOSA.LoansAdmin
                     }
                 }
                 dr.Close(); dr.Dispose(); dr = null;
-                //Get guar names
-                dr1 = new WARTECHCONNECTION.cConnect().ReadDB("select surname+' '+othernames [Names],initshares from members where memberno='" + txtGuarNo.Text + "'");
+
+                string loaneeGroup = "";
+                dr1 = new WARTECHCONNECTION.cConnect().ReadDB("select COMPANYCODE from members where memberno='" + txtLoaneeMemberNo.Text + "'");
                 if (dr1.HasRows)
                 {
                     while (dr1.Read())
                     {
+                        loaneeGroup = dr1["COMPANYCODE"]?.ToString()?.Trim() ?? "";
+                    }
+                }
+                dr1.Close(); dr1.Dispose(); dr1 = null;
+
+                //Get guar names
+                dr1 = new WARTECHCONNECTION.cConnect().ReadDB("select surname+' '+othernames [Names],initshares, COMPANYCODE from members where memberno='" + txtGuarNo.Text + "'");
+                if (dr1.HasRows)
+                {
+                    while (dr1.Read())
+                    {
+                        string guarGroup = dr1["COMPANYCODE"]?.ToString()?.Trim() ?? "";
+                        if (!loaneeGroup.ToUpper().Equals(guarGroup.ToUpper()))
+                        {
+                            txtGuarName.Text = "";
+                            txtGuarNo.Text = "";
+                            WARSOFT.WARMsgBox.Show($"Loanee and guarantor must be from the same group ({loaneeGroup})");
+                            txtGuarNo.Focus();
+                            return;
+                        }
                         txtGuarName.Text = dr1["Names"].ToString().Trim();
                     }
                 }
